@@ -755,6 +755,188 @@
       </div>
     </div>
 
+    <!-- ★ 集采三阶段动态图(价格-销量-净利率-海外) -->
+    <div class="chart-wrap">
+      <div class="chart-title">图 6 · ★ 集采三阶段动态对比 · 4 维核心指标(2017-2025)</div>
+      <div class="chart-sub">3 阶段:集采前(2017-2021) / 集采中(2022-2023) / 集采后(2024-2025) · 看价格-销量-净利率-海外 4 维动态</div>
+      <svg viewBox="0 0 800 380" preserveAspectRatio="xMidYMid meet">
+        <!-- 阶段背景 -->
+        <rect x="60" y="20" width="220" height="340" fill="rgba(45, 125, 82, 0.06)"/>
+        <rect x="280" y="20" width="160" height="340" fill="rgba(179, 58, 58, 0.06)"/>
+        <rect x="440" y="20" width="340" height="340" fill="rgba(200, 160, 77, 0.08)"/>
+        <g font-size="11" font-weight="700">
+          <text x="170" y="14" text-anchor="middle" fill="#2D7D52">集采前(2017-2021)· 量价齐升</text>
+          <text x="360" y="14" text-anchor="middle" fill="#B33A3A">集采中(2022-2023)· 量升价跌</text>
+          <text x="610" y="14" text-anchor="middle" fill="#C8A04D">集采后(2024-2025)· 价稳量增</text>
+        </g>
+
+        <!-- 子图 1: 净利率 / 毛利率 -->
+        <g>
+          <rect x="60" y="30" width="720" height="80" fill="#fff" stroke="#E1E5EB"/>
+          <text x="80" y="52" font-size="11" font-weight="700" fill="#0A2540">① 盈利能力(%)</text>
+          <g font-size="9" fill="#5A6473">
+            <text x="80" y="68">毛利率</text>
+            <text x="80" y="84">净利率</text>
+          </g>
+          <!-- 毛利率: 2017:84% 2018:85% 2019:86% 2020:84% 2021:84% 2022:65% 2023:65% 2024:69% 2025:70.5% -->
+          <!-- Y: 100% = 30, 0% = 100 (70px height) -->
+          <g stroke="#5BA579" stroke-width="2" fill="none">
+            <!-- 2017-2021 集采前 -->
+            <polyline points="170,46 215,45 260,44 305,46 350,46" />
+            <!-- 2022-2023 集采中 -->
+            <polyline points="395,65 440,65" stroke-dasharray="3,2" />
+            <!-- 2024-2025 集采后 -->
+            <polyline points="540,61 610,59" />
+          </g>
+          <g fill="#5BA579">
+            <circle cx="170" cy="46" r="2.5"/><circle cx="215" cy="45" r="2.5"/><circle cx="260" cy="44" r="2.5"/>
+            <circle cx="305" cy="46" r="2.5"/><circle cx="350" cy="46" r="2.5"/>
+            <circle cx="395" cy="65" r="2.5"/><circle cx="440" cy="65" r="2.5"/>
+            <circle cx="540" cy="61" r="2.5"/><circle cx="610" cy="59" r="2.5"/>
+          </g>
+          <g font-size="8" fill="#5BA579" font-weight="700">
+            <text x="170" y="40" text-anchor="middle">84</text>
+            <text x="215" y="40" text-anchor="middle">85</text>
+            <text x="260" y="40" text-anchor="middle">86</text>
+            <text x="305" y="40" text-anchor="middle">84</text>
+            <text x="350" y="40" text-anchor="middle">84</text>
+            <text x="395" y="60" text-anchor="middle" fill="#B33A3A">65</text>
+            <text x="440" y="60" text-anchor="middle" fill="#B33A3A">65</text>
+            <text x="540" y="55" text-anchor="middle">69</text>
+            <text x="610" y="53" text-anchor="middle">70.5</text>
+          </g>
+          <!-- 净利率: 2017:46% 2018:43% 2019:30% 2020:38% 2021:34% 2022:7% 2023:4% 2024:17% 2025:23% -->
+          <g stroke="#C8A04D" stroke-width="2" fill="none">
+            <polyline points="170,68 215,68 260,76 305,69 350,72" />
+            <polyline points="395,94 440,97" stroke-dasharray="3,2" />
+            <polyline points="540,87 610,84" />
+          </g>
+          <g fill="#C8A04D">
+            <circle cx="170" cy="68" r="2.5"/><circle cx="215" cy="68" r="2.5"/><circle cx="260" cy="76" r="2.5"/>
+            <circle cx="305" cy="69" r="2.5"/><circle cx="350" cy="72" r="2.5"/>
+            <circle cx="395" cy="94" r="2.5"/><circle cx="440" cy="97" r="2.5"/>
+            <circle cx="540" cy="87" r="2.5"/><circle cx="610" cy="84" r="2.5"/>
+          </g>
+          <g font-size="8" fill="#C8A04D" font-weight="700">
+            <text x="170" y="64" text-anchor="middle">46</text>
+            <text x="215" y="64" text-anchor="middle">43</text>
+            <text x="260" y="89" text-anchor="middle">30</text>
+            <text x="305" y="65" text-anchor="middle">38</text>
+            <text x="350" y="68" text-anchor="middle">34</text>
+            <text x="395" y="104" text-anchor="middle" fill="#B33A3A">7</text>
+            <text x="440" y="107" text-anchor="middle" fill="#B33A3A">4</text>
+            <text x="540" y="97" text-anchor="middle">17</text>
+            <text x="610" y="94" text-anchor="middle">23</text>
+          </g>
+        </g>
+
+        <!-- 子图 2: 海外营收占比 -->
+        <g>
+          <rect x="60" y="120" width="720" height="80" fill="#fff" stroke="#E1E5EB"/>
+          <text x="80" y="142" font-size="11" font-weight="700" fill="#0A2540">② 海外营收占比(%)</text>
+          <!-- 2017:5% 2018:6% 2019:8% 2020:7% 2021:8% 2022:9% 2023:10% 2024:9% 2025:12% -->
+          <g stroke="#0A2540" stroke-width="2.5" fill="none">
+            <polyline points="170,182 215,178 260,170 305,174 350,170" />
+            <polyline points="395,166 440,162" stroke-dasharray="3,2" />
+            <polyline points="540,166 610,154" />
+          </g>
+          <g fill="#0A2540">
+            <circle cx="170" cy="182" r="3"/><circle cx="215" cy="178" r="3"/><circle cx="260" cy="170" r="3"/>
+            <circle cx="305" cy="174" r="3"/><circle cx="350" cy="170" r="3"/>
+            <circle cx="395" cy="166" r="3"/><circle cx="440" cy="162" r="3"/>
+            <circle cx="540" cy="166" r="3"/><circle cx="610" cy="154" r="3.5" fill="#C8A04D"/>
+          </g>
+          <g font-size="8" fill="#0A2540" font-weight="700">
+            <text x="170" y="195" text-anchor="middle">5%</text>
+            <text x="215" y="195" text-anchor="middle">6%</text>
+            <text x="260" y="195" text-anchor="middle">8%</text>
+            <text x="305" y="195" text-anchor="middle">7%</text>
+            <text x="350" y="195" text-anchor="middle">8%</text>
+            <text x="395" y="195" text-anchor="middle">9%</text>
+            <text x="440" y="195" text-anchor="middle">10%</text>
+            <text x="540" y="195" text-anchor="middle">9%</text>
+            <text x="610" y="195" text-anchor="middle" fill="#C8A04D">12%</text>
+          </g>
+          <text x="80" y="178" font-size="9" fill="#5A6473" font-style="italic">出海加速</text>
+        </g>
+
+        <!-- 子图 3: 集采价格指数(代理:毛利率代替) -->
+        <g>
+          <rect x="60" y="210" width="720" height="80" fill="#fff" stroke="#E1E5EB"/>
+          <text x="80" y="232" font-size="11" font-weight="700" fill="#0A2540">③ 集采价格影响(代理: 1 - 毛利率/0.85)</text>
+          <!-- 价格压力指数越高,代表集采降价越深 -->
+          <!-- 2017: 0.012, 2018: 0, 2019: -0.012, 2020: 0.012, 2021: 0.012, 2022: 0.235, 2023: 0.235, 2024: 0.188, 2025: 0.171 -->
+          <g stroke="#B33A3A" stroke-width="2.5" fill="none">
+            <polyline points="170,277 215,275 260,273 305,277 350,277" />
+            <polyline points="395,285 440,285" stroke-dasharray="3,2" stroke-width="2.5"/>
+            <polyline points="540,282 610,281" />
+          </g>
+          <g fill="#B33A3A">
+            <circle cx="170" cy="277" r="2.5"/><circle cx="215" cy="275" r="2.5"/><circle cx="260" cy="273" r="2.5"/>
+            <circle cx="305" cy="277" r="2.5"/><circle cx="350" cy="277" r="2.5"/>
+            <circle cx="395" cy="285" r="3"/><circle cx="440" cy="285" r="3"/>
+            <circle cx="540" cy="282" r="2.5"/><circle cx="610" cy="281" r="2.5"/>
+          </g>
+          <g font-size="8" fill="#B33A3A" font-weight="700">
+            <text x="170" y="270" text-anchor="middle">1%</text>
+            <text x="260" y="266" text-anchor="middle">-1%</text>
+            <text x="305" y="270" text-anchor="middle">1%</text>
+            <text x="395" y="298" text-anchor="middle" fill="#B33A3A">24%</text>
+            <text x="440" y="298" text-anchor="middle" fill="#B33A3A">24%</text>
+            <text x="540" y="275" text-anchor="middle">19%</text>
+            <text x="610" y="274" text-anchor="middle">17%</text>
+          </g>
+        </g>
+
+        <!-- 子图 4: 营收 YoY 增速 -->
+        <g>
+          <rect x="60" y="300" width="720" height="60" fill="#fff" stroke="#E1E5EB"/>
+          <text x="80" y="320" font-size="11" font-weight="700" fill="#0A2540">④ 营收 YoY 增速(%)</text>
+          <!-- 2018:38% 2019:62% 2020:26% 2021:26% 2022:-28% 2023:7% 2024:39% 2025:22% -->
+          <g fill="#0A2540" font-size="8" font-weight="700">
+            <text x="215" y="354" text-anchor="middle">+38</text>
+            <text x="260" y="354" text-anchor="middle" fill="#2D7D52">+62</text>
+            <text x="305" y="354" text-anchor="middle">+26</text>
+            <text x="350" y="354" text-anchor="middle">+26</text>
+            <text x="395" y="354" text-anchor="middle" fill="#B33A3A">-28</text>
+            <text x="440" y="354" text-anchor="middle" fill="#B33A3A">+7</text>
+            <text x="540" y="354" text-anchor="middle" fill="#C8A04D">+39</text>
+            <text x="610" y="354" text-anchor="middle" fill="#C8A04D">+22</text>
+          </g>
+          <line x1="60" y1="335" x2="780" y2="335" stroke="#5A6473" stroke-dasharray="2,2"/>
+        </g>
+
+        <!-- X 轴年份 -->
+        <g font-size="9" fill="#5A6473" font-weight="500">
+          <text x="170" y="376" text-anchor="middle">2017</text>
+          <text x="215" y="376" text-anchor="middle">2018</text>
+          <text x="260" y="376" text-anchor="middle">2019</text>
+          <text x="305" y="376" text-anchor="middle">2020</text>
+          <text x="350" y="376" text-anchor="middle">2021</text>
+          <text x="395" y="376" text-anchor="middle" fill="#B33A3A">2022</text>
+          <text x="440" y="376" text-anchor="middle" fill="#B33A3A">2023</text>
+          <text x="540" y="376" text-anchor="middle" fill="#C8A04D" font-weight="700">2024</text>
+          <text x="610" y="376" text-anchor="middle" fill="#C8A04D" font-weight="700">2025</text>
+        </g>
+      </svg>
+      <div class="chart-legend">
+        <div class="item"><span class="swatch" style="background: #5BA579;"></span>毛利率</div>
+        <div class="item"><span class="swatch" style="background: #C8A04D;"></span>净利率</div>
+        <div class="item"><span class="swatch" style="background: #0A2540;"></span>海外占比</div>
+        <div class="item"><span class="swatch" style="background: #B33A3A;"></span>集采价格压力</div>
+        <div class="item" style="margin-left: auto; color: var(--color-text-muted);">★ 4 维动态还原"集采前/中/后"完整周期</div>
+      </div>
+    </div>
+
+    <div class="callout success">
+      <div class="title">★ 4 维动态解读</div>
+      <p style="font-size: 13px; line-height: 1.7; margin: 0;">
+        <strong>集采前(2017-2021):量价齐升黄金期</strong> — 毛利率 84-86% 高位稳定,净利率 30-46%(2017 招股期费用低),海外占比仅 5-8%,增长靠国内渠道下沉 + 创新产品。<br>
+        <strong>集采中(2022-2023):量升价跌至暗期</strong> — 毛利率从 84% 暴跌至 <span class="kpi-inline red">65%</span>(价格腰斩),净利率从 34% 跌至 <span class="kpi-inline red">4-7%</span>(腰斩再腰斩),但<strong>海外占比从 8% 提升至 10%</strong>开启出海应对,集采价格压力指数飙至 24%。<br>
+        <strong>集采后(2024-2025):价稳量增反转期</strong> — 毛利率回升至 <span class="kpi-inline green">70.5%</span>(+5.5pp),净利率回升至 <span class="kpi-inline green">23%</span>(+19pp),海外占比跃升至 <span class="kpi-inline accent">12%</span>(2025 +43.81%),集采压力降至 17%,验证"集采 → 国产替代 + 出海"双引擎驱动逻辑。
+      </p>
+    </div>
+
     <div class="card mb-3">
       <div class="card-body-flush">
         <table class="table">
