@@ -613,6 +613,317 @@ button { font-family: inherit; cursor: pointer; }
   margin: 32px 0;
 }
 
+/* ===== Page Layout w/ Sidebar (深度页) ===== */
+.layout-with-aside {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 32px;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.layout-with-aside .main-col { min-width: 0; }
+.layout-with-aside .aside-col { position: relative; }
+
+/* ===== In-page Nav (sticky 侧边目录) ===== */
+.page-nav {
+  position: sticky;
+  top: 80px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  box-shadow: var(--shadow-sm);
+}
+.page-nav .nav-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-accent);
+}
+.page-nav ul { list-style: none; padding: 0; margin: 0; }
+.page-nav li { margin-bottom: 2px; }
+.page-nav a {
+  display: block;
+  padding: 6px 10px;
+  color: var(--color-text);
+  font-size: 12px;
+  border-radius: 4px;
+  border-left: 2px solid transparent;
+  text-decoration: none;
+  transition: all 0.15s;
+  line-height: 1.5;
+}
+.page-nav a:hover {
+  background: rgba(200, 160, 77, 0.08);
+  color: var(--color-primary);
+  border-left-color: var(--color-accent);
+}
+.page-nav a.active {
+  background: rgba(10, 37, 64, 0.05);
+  color: var(--color-primary);
+  font-weight: 600;
+  border-left-color: var(--color-accent);
+  border-left-width: 3px;
+}
+.page-nav .sub { padding-left: 16px; font-size: 11px; color: var(--color-text-muted); }
+
+/* ===== In-page Nav (顶部 Tab) ===== */
+.page-nav-top {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-accent);
+  padding: 12px 24px;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: var(--header-h);
+  z-index: 50;
+  overflow-x: auto;
+}
+.page-nav-top a {
+  padding: 8px 14px;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.page-nav-top a:hover {
+  background: rgba(200, 160, 77, 0.08);
+  color: var(--color-primary);
+}
+.page-nav-top a.active {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== SVG Chart 容器 ===== */
+.chart-wrap {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin: 16px 0;
+}
+.chart-wrap .chart-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+.chart-wrap .chart-sub {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+.chart-wrap svg { width: 100%; height: auto; display: block; }
+.chart-wrap .chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+.chart-wrap .chart-legend .item { display: flex; align-items: center; gap: 6px; }
+.chart-wrap .chart-legend .swatch { width: 12px; height: 12px; border-radius: 2px; }
+
+/* ===== 术语注解 (Tooltip) ===== */
+.term {
+  border-bottom: 1px dotted var(--color-accent);
+  cursor: help;
+  position: relative;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.term:hover { color: var(--color-accent); }
+.term::after {
+  content: attr(data-def);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  width: max-content;
+  max-width: 320px;
+  white-space: normal;
+  text-align: left;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 100;
+}
+.term:hover::after, .term:focus::after { opacity: 1; }
+
+/* ===== 产品 SKU 详情卡 ===== */
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 16px;
+  background: var(--color-bg-elevated);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 12px 0;
+}
+.product-detail h4 {
+  margin: 0 0 8px 0;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.product-detail h4 .badge {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--color-accent);
+  color: #000;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.product-detail h4 .badge.green { background: var(--color-success); color: #fff; }
+.product-detail h4 .badge.red { background: var(--color-danger); color: #fff; }
+.product-detail .product-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 6px 12px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.product-detail .product-grid dt { color: var(--color-text-muted); font-weight: 500; }
+.product-detail .product-grid dd { margin: 0; color: var(--color-text); }
+
+/* ===== 注解 / Note 框 ===== */
+.note {
+  background: rgba(10, 37, 64, 0.04);
+  border-left: 3px solid var(--color-primary);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+.note strong { color: var(--color-primary); }
+.note.warning { background: rgba(200, 132, 61, 0.08); border-left-color: var(--color-warning); }
+.note.info { background: rgba(10, 37, 64, 0.04); border-left-color: var(--color-primary); }
+.note.success { background: rgba(45, 125, 82, 0.08); border-left-color: var(--color-success); }
+.note .note-title { font-weight: 700; margin-bottom: 4px; color: var(--color-primary); display: flex; align-items: center; gap: 6px; }
+.note.warning .note-title { color: var(--color-warning); }
+.note.success .note-title { color: var(--color-success); }
+
+/* ===== 子区块标题 ===== */
+.sub-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 20px 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sub-section-title::before {
+  content: "▸";
+  color: var(--color-accent);
+  font-size: 12px;
+}
+.sub-section-title .num {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 22px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ===== 指标双栏对照 ===== */
+.metric-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 12px 0;
+}
+.metric-compare .m-block {
+  background: var(--color-bg-elevated);
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+.metric-compare .m-block .lbl {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.metric-compare .m-block .val {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-variant-numeric: tabular-nums;
+}
+.metric-compare .m-block .delta {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.metric-compare .m-block .delta.up { color: var(--color-success); }
+.metric-compare .m-block .delta.down { color: var(--color-danger); }
+
+/* ===== 数据高亮框 ===== */
+.kpi-inline {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0 2px;
+}
+.kpi-inline.accent { background: var(--color-accent); color: #000; }
+.kpi-inline.green { background: var(--color-success); }
+.kpi-inline.red { background: var(--color-danger); }
+
+/* ===== Responsive for sidebar layout ===== */
+@media (max-width: 1100px) {
+  .layout-with-aside { grid-template-columns: 1fr; }
+  .layout-with-aside .aside-col { display: none; }
+}
+@media (max-width: 960px) {
+  .metric-compare { grid-template-columns: 1fr; }
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 960px) {
   .grid-3, .grid-4, .grid-5 { grid-template-columns: 1fr 1fr; }

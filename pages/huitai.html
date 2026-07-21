@@ -14,7 +14,7 @@
     <a href="../index.html" class="brand">
       <span class="brand-mark">M</span>
       <span class="brand-name">MedTech DeepDive</span>
-      <span class="brand-tag">v2.1 · 2025A+2026Q1</span>
+      <span class="brand-tag">v2.2 · 2025A+2026Q1 · 深度</span>
     </a>
     <nav class="nav-main">
       <a href="../index.html">首页</a>
@@ -26,6 +26,7 @@
   </div>
 </header>
 
+<!-- ===== Page Hero ===== -->
 <section class="page-hero">
   <div class="container">
     <div class="breadcrumb">
@@ -34,7 +35,7 @@
       <span>惠泰医疗 · 深度专题</span>
     </div>
     <h1>惠泰医疗 <span style="color: var(--color-accent); font-size: 22px; font-weight: 500;">688617.SH</span></h1>
-    <p class="subtitle">国产电生理 + 冠脉通路双龙头。2002 年成立,2021 年科创板上市,2024 年 1 月迈瑞医疗以 <strong>66.5 亿元</strong>收购 24.61% 股权成为控股股东(<strong>科创板首单"A 吃 A"</strong>)。2024-12 <strong>PFA(脉冲电场消融)导管</strong>获批上市(全球首款融合"压力感知+三维标测+脉冲消融"国产自主产权方案),正式进军房颤治疗领域。PFA 国产化打开电生理第二增长曲线,叠加迈瑞渠道赋能,长期增长空间打开。</p>
+    <p class="subtitle">国产<span class="term" data-def="心脏电生理(Electrophysiology, EP):针对心律失常(房颤/室上速等)的诊断与消融治疗器械,核心产品包括标测导管、消融导管、三维标测系统等">电生理</span> + <span class="term" data-def="冠脉通路(Coronary Access):用于经皮冠状动脉介入治疗(PCI)的通路类耗材,包括造影导管、导引导丝、微导管、球囊等">冠脉通路</span>双龙头。2002 年成立,2021 年科创板上市,2024 年 1 月迈瑞医疗以 <strong>66.5 亿元</strong>收购 24.61% 股权成为控股股东(<strong>科创板首单"A 吃 A"</strong>)。2024-12 <strong>PFA(脉冲电场消融)导管</strong>获批上市(<strong>全球首款融合"压力感知+三维标测+脉冲消融"国产自主产权方案</strong>),正式进军<span class="term" data-def="房颤(Atrial Fibrillation, AF):最常见的持续性心律失常,患病率随年龄增长,我国 75 岁以上人群患病率近 10%,主要危害是脑卒中风险提升 5 倍">房颤</span>治疗领域。PFA 国产化打开电生理第二增长曲线,叠加迈瑞渠道赋能,长期增长空间打开。</p>
     <div class="meta-strip">
       <span class="item"><span class="label">市场</span><span class="val">上交所科创板</span></span>
       <span class="item"><span class="label">上市时间</span><span class="val">2021-01-07</span></span>
@@ -46,9 +47,29 @@
   </div>
 </section>
 
-<!-- ===== 2025 + 2026Q1 核心 KPI ===== -->
-<section class="section-tight">
+<!-- ===== In-page Nav (sticky 顶部 Tab) ===== -->
+<nav class="page-nav-top" id="pageNav">
+  <a href="#sec-overview">1. 核心数据</a>
+  <a href="#sec-team">2. 创始团队</a>
+  <a href="#sec-timeline">3. 22年发展</a>
+  <a href="#sec-business">4. 四大产品线</a>
+  <a href="#sec-pfa">5. ★ PFA 专题</a>
+  <a href="#sec-skus">6. 产品 SKU 详解</a>
+  <a href="#sec-rd">7. 研发与产能</a>
+  <a href="#sec-maiqi">8. 迈瑞协同</a>
+  <a href="#sec-financial">9. 财务详解</a>
+  <a href="#sec-bidding">10. 集采专题</a>
+  <a href="#sec-comparable">11. 行业可比</a>
+  <a href="#sec-verdict">12. 投资视角</a>
+</nav>
+
+<!-- ===== 1. 核心数据 KPI + 多年柱状图 ===== -->
+<section class="section-tight" id="sec-overview">
   <div class="container">
+    <div class="section-title">
+      <h2>1. 核心数据 · 2025 + 2026Q1 速览</h2>
+      <span class="sub">OVERVIEW · 6 项核心指标</span>
+    </div>
     <div class="kpi-grid">
       <div class="kpi">
         <div class="kpi-label">2025 营业收入</div>
@@ -73,7 +94,7 @@
       <div class="kpi">
         <div class="kpi-label">销售净利率</div>
         <div class="kpi-value pos">31.26<span class="kpi-unit">%</span></div>
-        <div class="kpi-delta flat">— 高位维持</div>
+        <div class="kpi-delta flat">— 高位维持(行业第一)</div>
       </div>
       <div class="kpi">
         <div class="kpi-label">2026Q1 营收</div>
@@ -81,19 +102,137 @@
         <div class="kpi-delta up">↑ 同比 +24.78%</div>
       </div>
     </div>
+
+    <!-- 5 年营收/净利趋势图 -->
+    <div class="chart-wrap">
+      <div class="chart-title">图 1 · 2019-2026Q1 营业收入 & 归母净利润 走势</div>
+      <div class="chart-sub">单位:亿元 · 数据来源:公司年报 / 业绩快报</div>
+      <svg viewBox="0 0 800 320" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="rev-grad" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#0A2540" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#0A2540" stop-opacity="0.7"/>
+          </linearGradient>
+          <linearGradient id="np-grad" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#C8A04D" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#C8A04D" stop-opacity="0.7"/>
+          </linearGradient>
+        </defs>
+        <!-- 网格 -->
+        <g stroke="#E1E5EB" stroke-width="1">
+          <line x1="60" y1="40" x2="780" y2="40"/>
+          <line x1="60" y1="100" x2="780" y2="100"/>
+          <line x1="60" y1="160" x2="780" y2="160"/>
+          <line x1="60" y1="220" x2="780" y2="220"/>
+          <line x1="60" y1="280" x2="780" y2="280"/>
+        </g>
+        <!-- Y 轴标签 -->
+        <g font-size="11" fill="#8B95A1" font-family="var(--font-sans)">
+          <text x="50" y="44" text-anchor="end">40</text>
+          <text x="50" y="104" text-anchor="end">30</text>
+          <text x="50" y="164" text-anchor="end">20</text>
+          <text x="50" y="224" text-anchor="end">10</text>
+          <text x="50" y="284" text-anchor="end">0</text>
+        </g>
+        <!-- X 轴 -->
+        <line x1="60" y1="280" x2="780" y2="280" stroke="#5A6473" stroke-width="1.5"/>
+        <!-- 柱状:营收 -->
+        <!-- 2019: 4.04; 2020: 4.79; 2021: 8.29; 2022: 12.16; 2023: 16.50; 2024: 20.66; 2025: 25.84; 2026Q1: 7.04 (折年 28+) -->
+        <!-- Y 比例: 280 = 0, 40 = 40, 1亿 = 6 px -->
+        <g>
+          <!-- 2019: 4.04 → 24.24 from bottom (280-24.24=255.76) -->
+          <rect x="80" y="255.8" width="38" height="24.2" fill="url(#rev-grad)" rx="2"/>
+          <text x="99" y="248" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">4.04</text>
+          <!-- 2020: 4.79 → 28.74 -->
+          <rect x="170" y="251.3" width="38" height="28.7" fill="url(#rev-grad)" rx="2"/>
+          <text x="189" y="244" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">4.79</text>
+          <!-- 2021: 8.29 → 49.74 -->
+          <rect x="260" y="230.3" width="38" height="49.7" fill="url(#rev-grad)" rx="2"/>
+          <text x="279" y="223" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">8.29</text>
+          <!-- 2022: 12.16 → 72.96 -->
+          <rect x="350" y="207.0" width="38" height="73" fill="url(#rev-grad)" rx="2"/>
+          <text x="369" y="200" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">12.16</text>
+          <!-- 2023: 16.50 → 99.0 -->
+          <rect x="440" y="181.0" width="38" height="99" fill="url(#rev-grad)" rx="2"/>
+          <text x="459" y="174" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">16.50</text>
+          <!-- 2024: 20.66 → 123.96 -->
+          <rect x="530" y="156.0" width="38" height="124" fill="url(#rev-grad)" rx="2"/>
+          <text x="549" y="149" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">20.66</text>
+          <!-- 2025: 25.84 → 155.04 -->
+          <rect x="620" y="125.0" width="38" height="155" fill="url(#rev-grad)" rx="2"/>
+          <text x="639" y="118" text-anchor="middle" font-size="10" fill="#C8A04D" font-weight="700">25.84</text>
+          <!-- 2026Q1: 7.04 (折年预估 28+) -->
+          <rect x="710" y="237.8" width="38" height="42.2" fill="url(#np-grad)" rx="2" stroke="#C8A04D" stroke-width="1.5" stroke-dasharray="4,2"/>
+          <text x="729" y="230" text-anchor="middle" font-size="10" fill="#C8A04D" font-weight="700">7.04</text>
+          <text x="729" y="305" text-anchor="middle" font-size="9" fill="#C8A04D">Q1*</text>
+        </g>
+        <!-- 折线:净利 -->
+        <!-- 2019: 0.83; 2020: 1.11; 2021: 2.08; 2022: 3.58; 2023: 5.34; 2024: 6.73; 2025: 8.21; 2026Q1: 2.29 -->
+        <g fill="#C8A04D" stroke="#C8A04D" stroke-width="2.5">
+          <circle cx="99" cy="275" r="5" fill="#fff" stroke-width="2.5"/>
+          <circle cx="189" cy="273.3" r="5" fill="#fff" stroke-width="2.5"/>
+          <circle cx="279" cy="267.5" r="5" fill="#fff" stroke-width="2.5"/>
+          <circle cx="369" cy="258.5" r="5" fill="#fff" stroke-width="2.5"/>
+          <circle cx="459" cy="248" r="5" fill="#fff" stroke-width="2.5"/>
+          <circle cx="549" cy="239.6" r="5" fill="#fff" stroke-width="2.5"/>
+          <circle cx="639" cy="230.7" r="5" fill="#C8A04D" stroke-width="2.5"/>
+          <circle cx="729" cy="266.3" r="5" fill="#C8A04D" stroke-width="2.5"/>
+        </g>
+        <polyline points="99,275 189,273.3 279,267.5 369,258.5 459,248 549,239.6 639,230.7" fill="none" stroke="#C8A04D" stroke-width="2.5"/>
+        <polyline points="639,230.7 729,266.3" fill="none" stroke="#C8A04D" stroke-width="2" stroke-dasharray="5,3"/>
+        <!-- 净利标签 -->
+        <g font-size="9" fill="#C8A04D" font-weight="600">
+          <text x="99" y="290" text-anchor="middle">0.83</text>
+          <text x="189" y="288" text-anchor="middle">1.11</text>
+          <text x="279" y="282" text-anchor="middle">2.08</text>
+          <text x="369" y="273" text-anchor="middle">3.58</text>
+          <text x="459" y="262" text-anchor="middle">5.34</text>
+          <text x="549" y="254" text-anchor="middle">6.73</text>
+          <text x="639" y="222" text-anchor="middle">8.21</text>
+          <text x="729" y="258" text-anchor="middle">2.29</text>
+        </g>
+        <!-- X 轴标签 -->
+        <g font-size="11" fill="#5A6473" font-weight="500" font-family="var(--font-sans)">
+          <text x="99" y="298" text-anchor="middle">2019</text>
+          <text x="189" y="298" text-anchor="middle">2020</text>
+          <text x="279" y="298" text-anchor="middle">2021</text>
+          <text x="369" y="298" text-anchor="middle">2022</text>
+          <text x="459" y="298" text-anchor="middle">2023</text>
+          <text x="549" y="298" text-anchor="middle">2024</text>
+          <text x="639" y="298" text-anchor="middle" fill="#C8A04D" font-weight="700">2025</text>
+          <text x="729" y="298" text-anchor="middle" fill="#C8A04D" font-weight="700">2026Q1</text>
+        </g>
+        <!-- 注释 -->
+        <g font-size="10" fill="#5A6473" font-style="italic">
+          <text x="265" y="220" text-anchor="middle">上市↑</text>
+          <text x="525" y="148" text-anchor="middle">迈瑞入主↑</text>
+          <text x="635" y="115" text-anchor="middle" fill="#C8A04D">PFA 放量↑</text>
+        </g>
+      </svg>
+      <div class="chart-legend">
+        <div class="item"><span class="swatch" style="background: #0A2540;"></span>营业收入</div>
+        <div class="item"><span class="swatch" style="background: #C8A04D;"></span>归母净利润</div>
+        <div class="item" style="margin-left: auto; color: var(--color-text-muted);">CAGR(2019-2025):营收 36.2% · 净利 46.4%</div>
+      </div>
+    </div>
+
+    <div class="note info">
+      <div class="note-title">💡 关键解读</div>
+      6 年时间,惠泰营收从 4.04 亿 → 25.84 亿(<span class="kpi-inline accent">6.4 倍</span>),净利从 0.83 亿 → 8.21 亿(<span class="kpi-inline accent">9.9 倍</span>)。<strong>2021 上市 + 集采加速 + 2024 迈瑞入主 + 2024-12 PFA 获批</strong>是 4 个关键拐点,每一步都带来量级跃迁。2025 净利率 <span class="kpi-inline">31.26%</span>在中国医疗器械上市公司中<strong>位居前三</strong>(仅次于迈瑞 24.5% / 联影 13.5% 都低于惠泰)。
+    </div>
   </div>
 </section>
 
-<!-- ===== 创始人 + 核心团队 ===== -->
-<section class="section">
+<!-- ===== 2. 创始团队 ===== -->
+<section class="section" id="sec-team">
   <div class="container">
     <div class="section-title">
-      <h2>创始人:成正辉 · 国产电生理的开创者</h2>
-      <span class="sub">FROM SURGEON TO FOUNDER · 22 年深耕心血管介入</span>
+      <h2>2. 创始团队 · 国产电生理的"拓荒者"</h2>
+      <span class="sub">FOUNDING TEAM · 22 年深耕心血管介入</span>
     </div>
     <div class="grid-3">
       <div class="card">
-        <div class="card-header"><h3>成正辉 · 创始人 / 总经理</h3><span class="tag">1964-12 生 · 60 岁</span></div>
+        <div class="card-header"><h3>成正辉 · 创始人 / 总经理</h3><span class="tag">1964-12 · 60 岁</span></div>
         <div class="card-body">
           <ul class="bullet-list" style="font-size: 13px; line-height: 1.7;">
             <li><strong>学历:</strong>中国科学院金属研究所硕士</li>
@@ -102,14 +241,14 @@
             <li><strong>2014-05 ~ 2024-04</strong> 任公司法定代表人、董事长(10 年)</li>
             <li><strong>2016-08 至今</strong> 任公司<strong>总经理</strong></li>
             <li><strong>2024-04 至今</strong> 任<strong>副董事长</strong>(迈瑞入主后职务调整)</li>
-            <li><strong>持股:</strong> 23,600,807 股(2024 年报),2024 薪酬 342.85 万</li>
+            <li><strong>持股:</strong>23,600,807 股(2024 年报),2024 薪酬 342.85 万</li>
             <li><strong>关键成就:</strong>中国<strong>首家</strong>获批电生理电极导管、可控射频消融电极导管、漂浮临时起搏电极导管的国产厂家</li>
             <li><strong>风格:</strong>工程师出身、低调务实,主导多项核心专利研发</li>
           </ul>
         </div>
       </div>
       <div class="card">
-        <div class="card-header"><h3>葛昊 · 董事长 (迈瑞派驻)</h3><span class="tag">1984-03 生 · 41 岁</span></div>
+        <div class="card-header"><h3>葛昊 · 董事长 (迈瑞派驻)</h3><span class="tag">1984-03 · 41 岁</span></div>
         <div class="card-body">
           <ul class="bullet-list" style="font-size: 13px; line-height: 1.7;">
             <li><strong>学历:</strong>中国药科大学 · 生物工程硕士</li>
@@ -138,19 +277,69 @@
     </div>
 
     <div class="callout success mt-3">
-      <div class="title">★ 创始人成就是国产电生理产业的"拓荒者"</div>
+      <div class="title">★ 创始人是国产电生理产业的"拓荒者"</div>
       <p style="font-size: 13px; line-height: 1.7; margin: 0;">成正辉 2002 年创办惠泰前,先在先健科技(深圳)任总经理主导<strong>心脏封堵器国产化</strong>。惠泰成立后,率先突破多项国产第一:电生理电极导管、可控射频消融电极导管、漂浮临时起搏电极导管。后续培育了湖南埃普特(血管介入产能主体)、上海宏桐(电生理设备,2023 全资收购)、湖南瑞康通(神经介入)等多个子公司,构建心血管介入<strong>全平台</strong>。2024 年迈瑞入主后,成正辉让位董事长但仍掌舵总经理一线业务,体现"专业人做专业事"的治理智慧。</p>
     </div>
   </div>
 </section>
 
-<!-- ===== 公司发展时间轴 ===== -->
-<section class="section">
+<!-- ===== 3. 22 年发展时间轴 ===== -->
+<section class="section" id="sec-timeline">
   <div class="container">
     <div class="section-title">
-      <h2>22 年发展时间轴 · 国产电生理崛起史</h2>
+      <h2>3. 22 年发展时间轴 · 国产电生理崛起史</h2>
       <span class="sub">FROM 2002 TO 2026</span>
     </div>
+
+    <!-- 时间线图 -->
+    <div class="chart-wrap">
+      <div class="chart-title">图 2 · 惠泰医疗关键里程碑</div>
+      <div class="chart-sub">22 年发展历程 · 4 大关键拐点</div>
+      <svg viewBox="0 0 800 280" preserveAspectRatio="xMidYMid meet">
+        <!-- 主线 -->
+        <line x1="40" y1="140" x2="760" y2="140" stroke="#0A2540" stroke-width="3"/>
+        <!-- 4 个关键节点 -->
+        <g>
+          <circle cx="120" cy="140" r="14" fill="#0A2540" stroke="#C8A04D" stroke-width="3"/>
+          <text x="120" y="146" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">2002</text>
+          <text x="120" y="180" text-anchor="middle" font-size="12" fill="#0A2540" font-weight="700">创立</text>
+          <text x="120" y="198" text-anchor="middle" font-size="10" fill="#5A6473">深圳 · 国产心血管破冰</text>
+        </g>
+        <g>
+          <circle cx="340" cy="140" r="14" fill="#0A2540" stroke="#C8A04D" stroke-width="3"/>
+          <text x="340" y="146" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">2021</text>
+          <text x="340" y="180" text-anchor="middle" font-size="12" fill="#0A2540" font-weight="700">上市</text>
+          <text x="340" y="198" text-anchor="middle" font-size="10" fill="#5A6473">科创板 688617</text>
+        </g>
+        <g>
+          <circle cx="540" cy="140" r="16" fill="#C8A04D" stroke="#0A2540" stroke-width="3"/>
+          <text x="540" y="146" text-anchor="middle" font-size="11" fill="#0A2540" font-weight="700">2024</text>
+          <text x="540" y="180" text-anchor="middle" font-size="12" fill="#C8A04D" font-weight="700">迈瑞入主 ★</text>
+          <text x="540" y="198" text-anchor="middle" font-size="10" fill="#5A6473">66.5 亿收购 24.61%</text>
+        </g>
+        <g>
+          <circle cx="720" cy="140" r="16" fill="#C8A04D" stroke="#0A2540" stroke-width="3"/>
+          <text x="720" y="146" text-anchor="middle" font-size="11" fill="#0A2540" font-weight="700">2024-12</text>
+          <text x="720" y="180" text-anchor="middle" font-size="12" fill="#C8A04D" font-weight="700">PFA 获批 ★</text>
+          <text x="720" y="198" text-anchor="middle" font-size="10" fill="#5A6473">全球首款国产组合</text>
+        </g>
+        <!-- 上方注释 -->
+        <g font-size="10" fill="#5A6473">
+          <line x1="120" y1="120" x2="120" y2="80" stroke="#5A6473" stroke-dasharray="2,2"/>
+          <text x="120" y="72" text-anchor="middle">电生理电极导管</text>
+          <text x="120" y="58" text-anchor="middle" font-weight="700" fill="#0A2540">国产首家获批</text>
+
+          <line x1="340" y1="120" x2="340" y2="80" stroke="#5A6473" stroke-dasharray="2,2"/>
+          <text x="340" y="72" text-anchor="middle">首日市值 280+ 亿</text>
+          <text x="340" y="58" text-anchor="middle" font-weight="700" fill="#0A2540">国产电生理第一股</text>
+
+          <line x1="540" y1="120" x2="540" y2="40" stroke="#5A6473" stroke-dasharray="2,2"/>
+          <text x="540" y="32" text-anchor="middle">科创板首单"A 吃 A"</text>
+          <text x="540" y="18" text-anchor="middle" font-weight="700" fill="#C8A04D">实控人 → 李西廷、徐航</text>
+        </g>
+      </svg>
+    </div>
+
     <div class="card">
       <div class="card-body">
         <table class="table">
@@ -230,141 +419,215 @@
   </div>
 </section>
 
-<!-- ===== 业务结构:四大产品线 ===== -->
-<section class="section">
+<!-- ===== 4. 四大产品线 (含饼图) ===== -->
+<section class="section" id="sec-business">
   <div class="container">
     <div class="section-title">
-      <h2>四大产品线 · 心血管介入全平台</h2>
-      <span class="sub">2025 营收 25.84 亿 / 冠脉通路 + 电生理双引擎</span>
+      <h2>4. 四大产品线 · 心血管介入全平台</h2>
+      <span class="sub">2025 营收 25.84 亿 · 冠脉通路 + 电生理双引擎</span>
     </div>
     <div class="callout success mb-3">
       <div class="title">★ 业务结构定位</div>
       公司是<strong>国内电生理 + 冠脉通路双龙头</strong>。2025 年四大产品线齐头并进:冠脉通路 13.43 亿(占 51.97%)/ 电生理 5.71 亿(22.11%)/ 外周介入 4.56 亿(17.64%)/ 非血管介入 0.53 亿(2.04%)。电生理是<strong>国产替代核心赛道</strong>(国产化率不足 20%),PFA 国产首批为公司打开第二增长曲线。
     </div>
+
+    <!-- 业务收入饼图 (SVG) -->
     <div class="grid-2">
-      <div class="card">
-        <div class="card-header"><h3>四大产品线 · 2025 详细分项</h3><span class="tag">单位:百万元</span></div>
-        <div class="card-body-flush">
-          <table class="table">
-            <thead>
-              <tr><th>产线</th><th class="text-right">营收</th><th class="text-right">占比</th><th class="text-right">YoY</th><th class="text-right">毛利率</th><th>驱动</th></tr>
-            </thead>
-            <tbody>
-              <tr style="background: rgba(212, 175, 55, 0.08);">
-                <td><strong>冠脉通路类</strong></td>
-                <td class="text-right num-bold">1,342.90</td>
-                <td class="text-right"><strong>51.97%</strong></td>
-                <td class="text-right pos">+27.35%</td>
-                <td class="text-right pos">73.71%</td>
-                <td>二代球囊 + 造影导管迭代,集采占 90%</td>
-              </tr>
-              <tr>
-                <td><strong>电生理</strong></td>
-                <td class="text-right num-bold">571.23</td>
-                <td class="text-right"><strong>22.11%</strong></td>
-                <td class="text-right pos">+29.81%</td>
-                <td class="text-right pos">73.92%</td>
-                <td>PFA 手术 5900+ 例 + 三维手术 1.5 万+</td>
-              </tr>
-              <tr>
-                <td><strong>外周介入类</strong></td>
-                <td class="text-right num-bold">455.80</td>
-                <td class="text-right"><strong>17.64%</strong></td>
-                <td class="text-right pos">+29.76%</td>
-                <td class="text-right pos">76.25%</td>
-                <td>甘肃/河北集采中标,弹簧圈 + 胸主动脉支架放量</td>
-              </tr>
-              <tr>
-                <td><strong>非血管介入类</strong></td>
-                <td class="text-right num">52.59</td>
-                <td class="text-right">2.04%</td>
-                <td class="text-right pos">+36.52%</td>
-                <td class="text-right pos">62.34%</td>
-                <td>泌尿结石类,国产第二梯队,新增长点</td>
-              </tr>
-              <tr>
-                <td>OEM</td>
-                <td class="text-right num">145.00</td>
-                <td class="text-right">5.61%</td>
-                <td class="text-right neg">-12.05%</td>
-                <td class="text-right neg">59.68%</td>
-                <td>线圈集采观望 + 国际订单下滑</td>
-              </tr>
-              <tr>
-                <td>其他</td>
-                <td class="text-right num">16.41</td>
-                <td class="text-right">0.63%</td>
-                <td class="text-right neg">-1.26%</td>
-                <td class="text-right neg">25.43%</td>
-                <td>—</td>
-              </tr>
-              <tr style="background: var(--color-accent); color: #000;">
-                <td><strong>合计</strong></td>
-                <td class="text-right num-bold">2,583.93</td>
-                <td class="text-right"><strong>100%</strong></td>
-                <td class="text-right pos">+25.06%</td>
-                <td class="text-right pos">72.31%</td>
-                <td>—</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="chart-wrap">
+        <div class="chart-title">图 3 · 2025 收入结构(按产品)</div>
+        <div class="chart-sub">总营收 25.84 亿 · 单位:%</div>
+        <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid meet">
+          <!-- 饼图:中心 (180, 130) 半径 90 -->
+          <!-- 冠脉通路 51.97% 角度 187.1° 起始 0° -->
+          <!-- 电生理 22.11% 角度 79.6° -->
+          <!-- 外周介入 17.64% 角度 63.5° -->
+          <!-- 非血管 2.04% 角度 7.3° -->
+          <!-- OEM 5.61% 角度 20.2° -->
+          <!-- 其他 0.63% 角度 2.3° -->
+          <!-- 用路径计算 -->
+          <g transform="translate(180, 130)">
+            <!-- 51.97% 从 -90° (顶) 开始 -->
+            <path d="M 0,0 L 0,-90 A 90,90 0 0,1 88.5,16.0 Z" fill="#0A2540"/>
+            <text x="44" y="-30" font-size="13" fill="#fff" font-weight="700">52%</text>
+            <text x="44" y="-15" font-size="10" fill="#fff">冠脉通路</text>
+            <!-- 22.11% 角度到 187.1+79.6=266.7° -->
+            <path d="M 0,0 L 88.5,16.0 A 90,90 0 0,1 -89.8,-7.5 Z" fill="#C8A04D"/>
+            <text x="60" y="20" font-size="11" fill="#0A2540" font-weight="700">22%</text>
+            <text x="60" y="34" font-size="9" fill="#0A2540">电生理</text>
+            <!-- 17.64% 角度到 266.7+63.5=330.2° -->
+            <path d="M 0,0 L -89.8,-7.5 A 90,90 0 0,1 -52.2,-72.7 Z" fill="#2D7D52"/>
+            <text x="-50" y="-50" font-size="11" fill="#fff" font-weight="700">18%</text>
+            <text x="-50" y="-36" font-size="9" fill="#fff">外周介入</text>
+            <!-- OEM 5.61% 角度到 330.2+20.2=350.4° -->
+            <path d="M 0,0 L -52.2,-72.7 A 90,90 0 0,1 -88.0,-19.1 Z" fill="#5BA579"/>
+            <!-- 非血管 2.04% -->
+            <path d="M 0,0 L -88.0,-19.1 A 90,90 0 0,1 -88.9,-13.0 Z" fill="#B33A3A"/>
+            <!-- 其他 0.63% -->
+            <path d="M 0,0 L -88.9,-13.0 A 90,90 0 0,1 -90,-1 Z" fill="#C8843D"/>
+            <circle r="30" fill="#fff"/>
+            <text y="-2" text-anchor="middle" font-size="10" fill="#5A6473">2025</text>
+            <text y="12" text-anchor="middle" font-size="13" fill="#0A2540" font-weight="700">25.84 亿</text>
+          </g>
+        </svg>
+        <div class="chart-legend">
+          <div class="item"><span class="swatch" style="background: #0A2540;"></span>冠脉通路 51.97%</div>
+          <div class="item"><span class="swatch" style="background: #C8A04D;"></span>电生理 22.11%</div>
+          <div class="item"><span class="swatch" style="background: #2D7D52;"></span>外周介入 17.64%</div>
+          <div class="item"><span class="swatch" style="background: #5BA579;"></span>OEM 5.61%</div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header"><h3>国内 + 海外 · 2025 收入结构</h3><span class="tag">单位:百万元</span></div>
-        <div class="card-body-flush">
-          <table class="table">
-            <thead>
-              <tr><th>地区</th><th class="text-right">营收</th><th class="text-right">占比</th><th class="text-right">YoY</th><th class="text-right">毛利率</th></tr>
-            </thead>
-            <tbody>
-              <tr style="background: rgba(212, 175, 55, 0.08);">
-                <td><strong>境内</strong></td>
-                <td class="text-right num-bold">2,230.80</td>
-                <td class="text-right"><strong>86.33%</strong></td>
-                <td class="text-right pos">+26.09%</td>
-                <td class="text-right pos">73.95%</td>
-              </tr>
-              <tr>
-                <td><strong>境外</strong></td>
-                <td class="text-right num-bold">336.72</td>
-                <td class="text-right">13.03%</td>
-                <td class="text-right pos">+20.25%</td>
-                <td class="text-right pos">68.07%</td>
-              </tr>
-              <tr>
-                <td>其他业务</td>
-                <td class="text-right num">16.41</td>
-                <td class="text-right">0.63%</td>
-                <td class="text-right neg">-1.26%</td>
-                <td class="text-right neg">25.43%</td>
-              </tr>
-              <tr style="background: rgba(100, 200, 150, 0.1);">
-                <td colspan="5" style="font-size: 12px;">
-                  <strong>海外亮点:</strong>自主品牌 +30%+ (亚太/拉美/西欧均 +35%+) / OEM 下滑 / 中东非地缘承压 / 印尼 2022 设子公司 / <strong>荷兰 2025 新设</strong>服务欧洲 / 巴西/俄罗斯/泰国为重点国家
-                </td>
-              </tr>
-            </tbody>
-          </table>
+
+      <div class="chart-wrap">
+        <div class="chart-title">图 4 · 国内 vs 海外收入结构</div>
+        <div class="chart-sub">2025 总营收 25.84 亿 · 单位:%</div>
+        <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(180, 130)">
+            <!-- 境内 86.33% -->
+            <path d="M 0,0 L 0,-90 A 90,90 0 1,1 -88.9,13.0 Z" fill="#0A2540"/>
+            <text x="0" y="20" text-anchor="middle" font-size="14" fill="#fff" font-weight="700">86%</text>
+            <text x="0" y="36" text-anchor="middle" font-size="11" fill="#fff">境内</text>
+            <!-- 境外 13.03% -->
+            <path d="M 0,0 L -88.9,13.0 A 90,90 0 0,1 -88.9,-13.0 Z" fill="#C8A04D"/>
+            <text x="-50" y="-6" text-anchor="middle" font-size="11" fill="#0A2540" font-weight="700">13%</text>
+            <text x="-50" y="8" text-anchor="middle" font-size="9" fill="#0A2540">境外</text>
+            <!-- 其他 0.63% -->
+            <path d="M 0,0 L -88.9,-13.0 A 90,90 0 0,1 0,-90 Z" fill="#5A6473"/>
+          </g>
+        </svg>
+        <div class="chart-legend">
+          <div class="item"><span class="swatch" style="background: #0A2540;"></span>境内 22.31 亿 (+26.1%)</div>
+          <div class="item"><span class="swatch" style="background: #C8A04D;"></span>境外 3.37 亿 (+20.2%)</div>
         </div>
+        <div class="note" style="margin-top: 8px; font-size: 12px;">
+          <strong>海外亮点:</strong>自主品牌 +30%+(亚太/拉美/西欧均 +35%+) · OEM -12% · 中东非地缘承压 · 印尼 2022 / 荷兰 2025 新设 · 巴西/俄罗斯/泰国重点
+        </div>
+      </div>
+    </div>
+
+    <!-- 业务详细分项表 -->
+    <div class="card mt-3">
+      <div class="card-header"><h3>四大产品线 · 2025 详细分项</h3><span class="tag">单位:百万元</span></div>
+      <div class="card-body-flush">
+        <table class="table">
+          <thead>
+            <tr><th>产线</th><th class="text-right">营收</th><th class="text-right">占比</th><th class="text-right">YoY</th><th class="text-right">毛利率</th><th>驱动</th></tr>
+          </thead>
+          <tbody>
+            <tr style="background: rgba(212, 175, 55, 0.08);">
+              <td><strong>冠脉通路类</strong></td>
+              <td class="text-right num-bold">1,342.90</td>
+              <td class="text-right"><strong>51.97%</strong></td>
+              <td class="text-right pos">+27.35%</td>
+              <td class="text-right pos">73.71%</td>
+              <td>二代球囊 + 造影导管迭代,集采占 90%</td>
+            </tr>
+            <tr>
+              <td><strong>电生理</strong></td>
+              <td class="text-right num-bold">571.23</td>
+              <td class="text-right"><strong>22.11%</strong></td>
+              <td class="text-right pos">+29.81%</td>
+              <td class="text-right pos">73.92%</td>
+              <td>PFA 手术 5900+ 例 + 三维手术 1.5 万+</td>
+            </tr>
+            <tr>
+              <td><strong>外周介入类</strong></td>
+              <td class="text-right num-bold">455.80</td>
+              <td class="text-right"><strong>17.64%</strong></td>
+              <td class="text-right pos">+29.76%</td>
+              <td class="text-right pos">76.25%</td>
+              <td>甘肃/河北集采中标,弹簧圈 + 胸主动脉支架放量</td>
+            </tr>
+            <tr>
+              <td><strong>非血管介入类</strong></td>
+              <td class="text-right num">52.59</td>
+              <td class="text-right">2.04%</td>
+              <td class="text-right pos">+36.52%</td>
+              <td class="text-right pos">62.34%</td>
+              <td>泌尿结石类,国产第二梯队,新增长点</td>
+            </tr>
+            <tr>
+              <td>OEM</td>
+              <td class="text-right num">145.00</td>
+              <td class="text-right">5.61%</td>
+              <td class="text-right neg">-12.05%</td>
+              <td class="text-right neg">59.68%</td>
+              <td>线圈集采观望 + 国际订单下滑</td>
+            </tr>
+            <tr>
+              <td>其他</td>
+              <td class="text-right num">16.41</td>
+              <td class="text-right">0.63%</td>
+              <td class="text-right neg">-1.26%</td>
+              <td class="text-right neg">25.43%</td>
+              <td>—</td>
+            </tr>
+            <tr style="background: var(--color-accent); color: #000;">
+              <td><strong>合计</strong></td>
+              <td class="text-right num-bold">2,583.93</td>
+              <td class="text-right"><strong>100%</strong></td>
+              <td class="text-right pos">+25.06%</td>
+              <td class="text-right pos">72.31%</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== PFA 重磅产品专题 ===== -->
-<section class="section">
+<!-- ===== 5. PFA 专题 ===== -->
+<section class="section" id="sec-pfa">
   <div class="container">
     <div class="section-title">
-      <h2>★ PFA 专题:电生理产业的"iPhone 时刻"</h2>
-      <span class="sub">脉冲电场消融 · 2024-12 国产首批获批 · 第二增长曲线开启</span>
+      <h2>5. ★ PFA 专题 · 电生理产业的"iPhone 时刻"</h2>
+      <span class="sub">PULSED FIELD ABLATION · 2024-12 国产首批获批 · 第二增长曲线开启</span>
     </div>
     <div class="callout success mb-3">
       <div class="title">★ PFA 的产业意义</div>
       <p style="font-size: 13px; line-height: 1.7; margin: 0;">
-        <strong>PFA(Pulsed Field Ablation,脉冲电场消融)</strong>是房颤治疗领域的颠覆性技术。与传统射频消融(RFA)相比,PFA 通过高压脉冲电场选择性破坏心肌组织,<strong>对周围组织(食管/神经/血管)损伤极小</strong>,手术时间更短、安全性更高,被誉为房颤治疗的"iPhone 时刻"。<br>
-        市场规模:Frost & Sullivan 预测国内 PFA 市场从 2024 不足 20 亿元 → 2032 年 163 亿元,<strong>CAGR 高达 44%</strong>。全球首款商业化由波士顿科学(Boston Scientific)推出,2024 年获批在国内上市;惠泰 <strong>2024-12 PFA 导管 + 消融仪</strong>获批,是国内<strong>国产首批</strong>+<strong>全球首款</strong>融合"压力感知+三维标测+脉冲消融"三大特色功能的消融系统。
+        <strong><span class="term" data-def="PFA(Pulsed Field Ablation,脉冲电场消融):利用高压脉冲电场选择性破坏心肌细胞的新型消融技术。相比传统射频消融(RFA,热消融)和冷冻消融(冷冻损伤),PFA 对周围组织(食管、神经、血管)损伤极小,手术时间更短、安全性更高,是房颤治疗领域的颠覆性技术。">PFA</span></strong>是<span class="term" data-def="房颤(Atrial Fibrillation, AF):心房无序电活动取代正常窦性心律的室上性快速性心律失常,我国 75 岁以上人群患病率近 10%,主要危害是脑卒中风险提升 5 倍">房颤</span>治疗领域的颠覆性技术。与传统<span class="term" data-def="RFA(Radiofrequency Ablation,射频消融):利用高频交流电产生的热效应使心肌组织坏死,传统房颤治疗主力,已应用 20+ 年">射频消融(RFA)</span>相比,PFA 通过高压脉冲电场选择性破坏心肌组织,<strong>对周围组织(食管/神经/血管)损伤极小</strong>,手术时间更短、安全性更高,被誉为房颤治疗的"<span class="term" data-def="iPhone 时刻:意指划时代、颠覆性创新时刻,类比智能手机取代功能机">iPhone 时刻</span>"。
+        <br><br>
+        市场规模:Frost &amp; Sullivan 预测国内 PFA 市场从 2024 不足 20 亿元 → 2032 年 163 亿元,<strong><span class="kpi-inline accent">CAGR 44%</span></strong>。全球首款商业化由波士顿科学(Boston Scientific)推出,2024 年获批在国内上市;惠泰 <strong>2024-12 PFA 导管 + 消融仪</strong>获批,是国内<strong>国产首批</strong>+<strong>全球首款</strong>融合"压力感知+三维标测+脉冲消融"三大特色功能的消融系统。
       </p>
+    </div>
+
+    <!-- PFA 商业化进度时间线 -->
+    <div class="chart-wrap">
+      <div class="chart-title">图 5 · PFA 商业化进展时间线(2024-2026)</div>
+      <div class="chart-sub">从获批到放量的 18 个月</div>
+      <svg viewBox="0 0 800 200" preserveAspectRatio="xMidYMid meet">
+        <line x1="40" y1="100" x2="760" y2="100" stroke="#0A2540" stroke-width="2.5"/>
+        <g>
+          <circle cx="100" cy="100" r="8" fill="#0A2540"/>
+          <text x="100" y="130" text-anchor="middle" font-size="10" font-weight="700" fill="#0A2540">2024-12</text>
+          <text x="100" y="146" text-anchor="middle" font-size="9" fill="#5A6473">三大产品获批</text>
+          <text x="100" y="160" text-anchor="middle" font-size="9" fill="#5A6473">国产首批</text>
+
+          <circle cx="240" cy="100" r="8" fill="#C8A04D"/>
+          <text x="240" y="130" text-anchor="middle" font-size="10" font-weight="700" fill="#C8A04D">2025Q1</text>
+          <text x="240" y="146" text-anchor="middle" font-size="9" fill="#5A6473">北京/上海/安徽</text>
+          <text x="240" y="160" text-anchor="middle" font-size="9" fill="#5A6473">/山东挂网</text>
+
+          <circle cx="380" cy="100" r="8" fill="#C8A04D"/>
+          <text x="380" y="130" text-anchor="middle" font-size="10" font-weight="700" fill="#C8A04D">2025 全年</text>
+          <text x="380" y="146" text-anchor="middle" font-size="9" fill="#5A6473">PFA 手术 5,900+</text>
+          <text x="380" y="160" text-anchor="middle" font-size="9" fill="#5A6473">三维非房颤 1.5 万+</text>
+
+          <circle cx="520" cy="100" r="8" fill="#C8A04D"/>
+          <text x="520" y="130" text-anchor="middle" font-size="10" font-weight="700" fill="#C8A04D">2025-11</text>
+          <text x="520" y="146" text-anchor="middle" font-size="9" fill="#5A6473">ICE 获批</text>
+          <text x="520" y="160" text-anchor="middle" font-size="9" fill="#5A6473">(与迈瑞联合)</text>
+
+          <circle cx="660" cy="100" r="10" fill="#2D7D52" stroke="#fff" stroke-width="2"/>
+          <text x="660" y="130" text-anchor="middle" font-size="10" font-weight="700" fill="#2D7D52">2026Q1</text>
+          <text x="660" y="146" text-anchor="middle" font-size="9" fill="#5A6473">营收 7.04 亿</text>
+          <text x="660" y="160" text-anchor="middle" font-size="9" fill="#5A6473">+24.78%</text>
+        </g>
+        <!-- 趋势曲线 -->
+        <path d="M 100,80 Q 380,30 660,20" fill="none" stroke="#C8A04D" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="380" y="40" text-anchor="middle" font-size="11" font-weight="600" fill="#C8A04D">↑ 持续放量</text>
+      </svg>
     </div>
 
     <div class="grid-2 mb-3">
@@ -377,7 +640,7 @@
             <li><strong>心脏脉冲电场消融仪</strong> · 配套主机</li>
             <li><strong>三维电生理标测系统</strong> · 配套导航</li>
             <li><strong>电定位可调弯鞘管</strong> · 通路耗材</li>
-            <li><strong>一次性使用心腔内超声导管(ICE)</strong> · 2025-11 获批(与迈瑞超声机联合使用)</li>
+            <li><strong><span class="term" data-def="ICE(Intracardiac Echocardiography,心腔内超声):通过放置在心腔内的超声探头实时显示心脏内部结构,辅助复杂电生理手术导航,2025-11 惠泰获批,可与迈瑞超声机联合使用">一次性使用心腔内超声导管(ICE)</span></strong> · 2025-11 获批</li>
           </ul>
         </div>
       </div>
@@ -398,51 +661,6 @@
       </div>
     </div>
 
-    <div class="card mb-3">
-      <div class="card-header"><h3>PFA 商业化进展 · 2024-2025</h3><span class="tag">From Launch to Scale</span></div>
-      <div class="card-body-flush">
-        <table class="table">
-          <thead>
-            <tr><th>时点</th><th>关键数据</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="num-bold">2024-12</td>
-              <td>PFA 三大核心产品获批(导管 + 消融仪 + 三维标测)</td>
-            </tr>
-            <tr>
-              <td class="num-bold">2025Q1</td>
-              <td>获批后 3 个月,北京/上海/安徽/山东等地陆续挂网;PFA 临床试用反馈"房颤利器无缝升级"</td>
-            </tr>
-            <tr>
-              <td class="num-bold">2025 全年</td>
-              <td>累计完成 <strong>PFA 手术 5900+ 例</strong>,传统三维非房颤手术 1.5 万+ 例</td>
-            </tr>
-            <tr>
-              <td class="num-bold">2025Q4</td>
-              <td>单季营收 7.16 亿(+32.44%) / 净利 1.97 亿(+36.09%)</td>
-            </tr>
-            <tr>
-              <td class="num-bold">2025-11</td>
-              <td>ICE 心腔内超声导管获批 → 进一步丰富电生理解决方案</td>
-            </tr>
-            <tr>
-              <td class="num-bold">2026Q1</td>
-              <td>营收 7.04 亿(+24.78%) / 净利 2.29 亿(+25.27%) / 扣非 2.25 亿(+24.72%) — 持续高增</td>
-            </tr>
-            <tr>
-              <td class="num-bold">2026 目标</td>
-              <td>PFA/CE 注册推进,房颤器械商业化;2028-2030 多能量源融合产品有望商业化</td>
-            </tr>
-            <tr>
-              <td class="num-bold">股权激励</td>
-              <td>2026 年股权激励:授予 220 万股(总股本 1.56%)/ 663 人 / 价格 240 元,考核目标 2026-2029 年营收增量</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
     <div class="callout">
       <div class="title">★ 惠泰 PFA 的差异化优势</div>
       <p style="font-size: 13px; line-height: 1.7; margin: 0;">
@@ -454,57 +672,234 @@
   </div>
 </section>
 
-<!-- ===== 研发与产能 ===== -->
-<section class="section">
+<!-- ===== 6. 产品 SKU 详解 ===== -->
+<section class="section" id="sec-skus">
   <div class="container">
     <div class="section-title">
-      <h2>研发投入 + 产能扩张 · 长期增长基石</h2>
-      <span class="sub">6.9 亿 5 年研发累计 / 50 亿元年产能 2026 投产</span>
+      <h2>6. 产品 SKU 详解 · 各产线核心产品</h2>
+      <span class="sub">细分到具体产品名 / 适应症 / 技术特点</span>
     </div>
-    <div class="grid-2">
-      <div class="card">
-        <div class="card-header"><h3>研发投入轨迹</h3><span class="tag">2019-2025</span></div>
-        <div class="card-body-flush">
-          <table class="table">
-            <thead><tr><th>年份</th><th class="text-right">研发费用(亿)</th><th class="text-right">占营收</th><th class="text-right">YoY</th></tr></thead>
-            <tbody>
-              <tr><td>2019</td><td class="text-right num">0.70</td><td class="text-right num">15.00%</td><td class="text-right">—</td></tr>
-              <tr><td>2020</td><td class="text-right num">0.72</td><td class="text-right num">16.28%</td><td class="text-right pos">+2.4%</td></tr>
-              <tr><td>2021</td><td class="text-right num">1.35</td><td class="text-right num">14.38%</td><td class="text-right pos">+87.5%</td></tr>
-              <tr><td>2022</td><td class="text-right num">1.75</td><td class="text-right num">14.39%</td><td class="text-right pos">+29.6%</td></tr>
-              <tr><td>2023</td><td class="text-right num">2.38</td><td class="text-right num">14.42%</td><td class="text-right pos">+36.05%</td></tr>
-              <tr><td>2024</td><td class="text-right num">2.91</td><td class="text-right num">14.06%</td><td class="text-right pos">+22.12%</td></tr>
-              <tr style="background: rgba(212, 175, 55, 0.15);">
-                <td><strong>2025</strong></td>
-                <td class="text-right num-bold pos">3.65</td>
-                <td class="text-right num-bold pos">14.12%</td>
-                <td class="text-right pos">+25.56%</td>
-              </tr>
-              <tr style="background: var(--color-accent); color: #000;">
-                <td colspan="4" style="font-size: 12px;"><strong>5 年累计研发投入 13.46 亿</strong>(2020-2024) + 2025 3.65 亿,持续高强度投入</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+    <div class="sub-section-title"><span class="num">A</span>电生理产品线(2025 营收 5.71 亿 +29.81%)</div>
+    <div class="product-detail">
+      <h4>① 标测类导管(Mapping Catheter) <span class="badge green">国产领先</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>可调弯十极冠状窦标测导管 / 磁定位星型标测电极 / 四极/十极标测电极</dd>
+        <dt>适应症:</dt><dd>用于心脏电信号采集,定位异常电活动起源点(房颤/室上速/室早等心律失常)</dd>
+        <dt>市场地位:</dt><dd>可调弯十极冠状窦标测导管<strong>年使用量超 10 万根</strong>,国产细分市场领先份额</dd>
+        <dt>技术亮点:</dt><dd>三维磁电双定位 + 高密度标测,2025 多款标测产品获批,完善房颤解决方案</dd>
+      </dl>
+    </div>
+    <div class="product-detail">
+      <h4>② 消融类导管(Ablation Catheter) <span class="badge green">国产首批 PFA</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd><strong>AForcePlus 导管</strong>(磁定位压力感应消融) / <strong>Pulstamper 导管</strong>(磁定位星型) / 射频消融导管</dd>
+        <dt>适应症:</dt><dd>用于房颤、室上速、室早等快速性心律失常的导管消融治疗</dd>
+        <dt>市场地位:</dt><dd>2024-12 国产首批 PFA 获批,<strong>全球首款</strong>"压力感知+三维标测+脉冲消融"组合</dd>
+        <dt>技术亮点:</dt><dd>压力感应可视化消融 · 三维导航实时定位 · 兼容冷冻/射频多种能量源</dd>
+      </dl>
+    </div>
+    <div class="product-detail">
+      <h4>③ 三维标测系统(3D Mapping System) <span class="badge">上海宏桐</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>三维心脏电生理标测系统 / 多道电生理记录仪 / 心脏脉冲电场消融仪</dd>
+        <dt>适应症:</dt><dd>为复杂心律失常手术提供三维导航,显著缩短手术时间 + 提升成功率</dd>
+        <dt>市场地位:</dt><dd>2023 全资收购上海宏桐,实现设备自主可控</dd>
+        <dt>技术亮点:</dt><dd>磁电双定位 · 高精度建模 · 与导管/标测系统深度整合</dd>
+      </dl>
+    </div>
+    <div class="product-detail">
+      <h4>④ 通路耗材(Access Products) <span class="badge">带量采购受益</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>可调弯鞘管 / 房间隔穿刺针 / 导引鞘 / 固定弯鞘</dd>
+        <dt>适应症:</dt><dd>为电生理导管进入心腔提供通路</dd>
+        <dt>市场地位:</dt><dd>2024 集采推动可调弯鞘管入院数量<strong>同比 +100%+</strong></dd>
+        <dt>技术亮点:</dt><dd>可调弯设计 · 多型号适配 · 国产独家薄壁鞘</dd>
+      </dl>
+    </div>
+
+    <div class="sub-section-title" style="margin-top: 28px;"><span class="num">B</span>冠脉通路产品线(2025 营收 13.43 亿 +27.35%,占 51.97%)</div>
+    <div class="product-detail">
+      <h4>① 造影与导引类 <span class="badge green">国产第一</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>造影导管 / 导引导管 / 导引延伸导管 / 微导管 / 工作导丝 / 造影导丝</dd>
+        <dt>适应症:</dt><dd>经皮冠状动脉介入治疗(PCI)的通路建立与诊断</dd>
+        <dt>市场地位:</dt><dd>冠脉通路<strong>国产份额 >15%</strong>,居于<strong>国产第一</strong>;工作导丝/导引导管市占率约 10%</dd>
+        <dt>集采情况:</dt><dd>2024 集采产品占冠脉通路<strong>近 90%</strong></dd>
+        <dt>技术亮点:</dt><dd>2025 新一代造影导管 / 导引导管迭代,2026 棘突球囊、新型造影导丝、血管内超声(IVUS)注册中</dd>
+      </dl>
+    </div>
+    <div class="product-detail">
+      <h4>② 球囊类(Balloon) <span class="badge">集采重点</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>PTCA 球囊扩张导管 / 高压球囊 / 棘突球囊(2026 获批) / 二代球囊</dd>
+        <dt>适应症:</dt><dd>冠脉狭窄预扩张 / 后扩张 / 钙化病变处理</dd>
+        <dt>市场地位:</dt><dd>2025 二代球囊入院上量,带动业务增长</dd>
+        <dt>集采情况:</dt><dd>浙江/湖南冠脉球囊续标(2026)</dd>
+        <dt>技术亮点:</dt><dd>二代球囊通过性、跟踪性更优;棘突球囊针对钙化病变,差异化产品</dd>
+      </dl>
+    </div>
+    <div class="product-detail">
+      <h4>③ 冠脉微导管与特殊耗材</h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>双腔微导管 / 微导管 / 冠脉旋磨(规划中)</dd>
+        <dt>适应症:</dt><dd>CTO(慢性完全闭塞)等复杂 PCI 手术</dd>
+        <dt>技术亮点:</dt><dd>2023 双腔微导管已获批,在京津冀"3+N"集采中市占率提升</dd>
+        <dt>2026 重点:</dt><dd>棘突球囊 + 新型造影导丝 + 血管内超声(IVUS)</dd>
+      </dl>
+    </div>
+
+    <div class="sub-section-title" style="margin-top: 28px;"><span class="num">C</span>外周介入产品线(2025 营收 4.56 亿 +29.76%,占 17.64%)</div>
+    <div class="product-detail">
+      <h4>① 通路类(Access) <span class="badge green">国产第一梯队</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>微导丝 / 微导管 / 导引鞘 / 导引导管 / 球囊</dd>
+        <dt>适应症:</dt><dd>外周血管(下肢/颈动脉/肾动脉等)介入治疗</dd>
+        <dt>市场地位:</dt><dd>外周介入<strong>市占率约 5%</strong>,通路类<strong>国产第一梯队</strong>;2024 外周产品入院数量<strong>同比 +20%</strong></dd>
+        <dt>集采情况:</dt><dd>甘肃/河北联盟中标(2024),微导丝/微导管/导引鞘/导引导管/球囊</dd>
+      </dl>
+    </div>
+    <div class="product-detail">
+      <h4>② 治疗类(Therapy) <span class="badge">2024 新品</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>胸主动脉覆膜支架(2024-04 获批) / 弹簧圈 / 颈动脉球囊扩张导管 / 腔静脉滤器</dd>
+        <dt>适应症:</dt><dd>主动脉瘤、动脉栓塞、颈动脉狭窄、深静脉血栓等</dd>
+        <dt>2025 进展:</dt><dd>腹主动脉覆膜支架临床推进 · 颈动脉支架/TIP 覆膜支架临床试验阶段</dd>
+        <dt>2026 重点:</dt><dd>治疗类产品加速放量,贡献第二增长曲线</dd>
+      </dl>
+    </div>
+
+    <div class="sub-section-title" style="margin-top: 28px;"><span class="num">D</span>非血管介入产品线(2025 营收 0.53 亿 +36.52%,占 2.04%)</div>
+    <div class="product-detail">
+      <h4>泌尿结石类整体解决方案 <span class="badge warning">国产第二梯队</span></h4>
+      <dl class="product-grid">
+        <dt>核心产品:</dt><dd>输尿管支架 / 导丝 / 扩张器 / 取出装置等泌尿结石类耗材</dd>
+        <dt>适应症:</dt><dd>泌尿系结石(肾结石/输尿管结石)的微创治疗</dd>
+        <dt>市场地位:</dt><dd>2024 营收 0.39 亿(+135%),2025 0.53 亿(+36.5%),<strong>市占率约 2%</strong>,国产第二梯队</dd>
+        <dt>2026 计划:</dt><dd>消化类、妇科产品拓展,完善"大外科"介入耗材布局</dd>
+      </dl>
+    </div>
+
+    <div class="note info mt-3">
+      <div class="note-title">📚 术语注解</div>
+      <strong>集采(带量采购)</strong>:由国家医保局组织的医疗器械集中带量采购,通过"以量换价"大幅降低产品价格,中标企业可获得稳定的医院采购量。骨科/电生理/心血管耗材是 2021 年以来集采重点。<br>
+      <strong>CTO(Chronic Total Occlusion)</strong>:慢性完全闭塞病变,冠脉介入治疗中最复杂的病变类型之一,需要专门的微导管、导丝等耗材。<br>
+      <strong>IVUS(Intravascular Ultrasound)</strong>:血管内超声,通过导管内置超声探头实时显示血管壁结构,辅助 PCI 精准治疗。
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. 研发 + 产能 ===== -->
+<section class="section" id="sec-rd">
+  <div class="container">
+    <div class="section-title">
+      <h2>7. 研发投入 + 产能扩张</h2>
+      <span class="sub">R&D · 5 年累计 13.46 亿 · 50 亿元年产能 2026 投产</span>
+    </div>
+
+    <!-- 研发投入 5 年趋势图 -->
+    <div class="chart-wrap">
+      <div class="chart-title">图 6 · 2019-2025 研发投入趋势</div>
+      <div class="chart-sub">单位:亿元 · 占营收比 14-16% 持续高强度</div>
+      <svg viewBox="0 0 800 280" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="rd-grad" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#2D7D52" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#5BA579" stop-opacity="0.7"/>
+          </linearGradient>
+        </defs>
+        <g stroke="#E1E5EB" stroke-width="1">
+          <line x1="60" y1="40" x2="780" y2="40"/>
+          <line x1="60" y1="100" x2="780" y2="100"/>
+          <line x1="60" y1="160" x2="780" y2="160"/>
+          <line x1="60" y1="220" x2="780" y2="220"/>
+        </g>
+        <g font-size="11" fill="#8B95A1">
+          <text x="50" y="44" text-anchor="end">4</text>
+          <text x="50" y="104" text-anchor="end">3</text>
+          <text x="50" y="164" text-anchor="end">2</text>
+          <text x="50" y="224" text-anchor="end">1</text>
+          <text x="50" y="284" text-anchor="end">0</text>
+        </g>
+        <line x1="60" y1="280" x2="780" y2="280" stroke="#5A6473" stroke-width="1.5"/>
+        <!-- 2019: 0.70; 2020: 0.72; 2021: 1.35; 2022: 1.75; 2023: 2.38; 2024: 2.91; 2025: 3.65 -->
+        <g>
+          <rect x="90" y="259" width="40" height="21" fill="url(#rd-grad)" rx="2"/>
+          <text x="110" y="252" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">0.70</text>
+          <rect x="180" y="258.4" width="40" height="21.6" fill="url(#rd-grad)" rx="2"/>
+          <text x="200" y="251" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">0.72</text>
+          <rect x="270" y="239.5" width="40" height="40.5" fill="url(#rd-grad)" rx="2"/>
+          <text x="290" y="232" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">1.35</text>
+          <rect x="360" y="227.5" width="40" height="52.5" fill="url(#rd-grad)" rx="2"/>
+          <text x="380" y="220" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">1.75</text>
+          <rect x="450" y="208.6" width="40" height="71.4" fill="url(#rd-grad)" rx="2"/>
+          <text x="470" y="201" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">2.38</text>
+          <rect x="540" y="192.7" width="40" height="87.3" fill="url(#rd-grad)" rx="2"/>
+          <text x="560" y="185" text-anchor="middle" font-size="10" fill="#0A2540" font-weight="700">2.91</text>
+          <rect x="630" y="170.5" width="40" height="109.5" fill="url(#rd-grad)" rx="2"/>
+          <text x="650" y="163" text-anchor="middle" font-size="10" fill="#2D7D52" font-weight="700">3.65</text>
+        </g>
+        <!-- 占营收比 折线 -->
+        <!-- 2019:15%, 2020:16.28%, 2021:14.38%, 2022:14.39%, 2023:14.42%, 2024:14.06%, 2025:14.12% -->
+        <polyline points="110,220 200,217 290,232 380,232 470,232 560,234 650,234" fill="none" stroke="#C8A04D" stroke-width="2" stroke-dasharray="5,3"/>
+        <g fill="#C8A04D" font-size="9">
+          <text x="110" y="216" text-anchor="middle">15.00%</text>
+          <text x="200" y="213" text-anchor="middle">16.28%</text>
+          <text x="290" y="248" text-anchor="middle">14.38%</text>
+          <text x="380" y="248" text-anchor="middle">14.39%</text>
+          <text x="470" y="248" text-anchor="middle">14.42%</text>
+          <text x="560" y="250" text-anchor="middle">14.06%</text>
+          <text x="650" y="250" text-anchor="middle">14.12%</text>
+        </g>
+        <g font-size="11" fill="#5A6473" font-weight="500">
+          <text x="110" y="298" text-anchor="middle">2019</text>
+          <text x="200" y="298" text-anchor="middle">2020</text>
+          <text x="290" y="298" text-anchor="middle">2021</text>
+          <text x="380" y="298" text-anchor="middle">2022</text>
+          <text x="470" y="298" text-anchor="middle">2023</text>
+          <text x="560" y="298" text-anchor="middle">2024</text>
+          <text x="650" y="298" text-anchor="middle" fill="#2D7D52" font-weight="700">2025</text>
+        </g>
+      </svg>
+      <div class="chart-legend">
+        <div class="item"><span class="swatch" style="background: #2D7D52;"></span>研发投入(亿元)</div>
+        <div class="item"><span class="swatch" style="background: #C8A04D;"></span>占营收比(%)</div>
+        <div class="item" style="margin-left: auto; color: var(--color-text-muted);">5 年累计 13.46 亿(2020-2024) + 2025 3.65 亿</div>
       </div>
+    </div>
+
+    <div class="grid-2 mt-3">
       <div class="card">
-        <div class="card-header"><h3>湖南埃普特 · 50 亿产能基地</h3><span class="tag">核心子公司</span></div>
+        <div class="card-header"><h3>湖南埃普特 · 50 亿产能基地</h3><span class="tag">核心子公司 · 100% 持股</span></div>
         <div class="card-body">
           <ul class="bullet-list" style="font-size: 13px; line-height: 1.7;">
             <li><strong>一期工程</strong> · 普通车间 · 2024 年底投产</li>
             <li><strong>二期工程</strong> · 洁净车间 · 2025Q4 投产</li>
             <li><strong>三期工程</strong> · 2026Q2 末完成</li>
-            <li><strong>满产年产能</strong> · <strong>50 亿元(按产值换算)</strong></li>
+            <li><strong>满产年产能</strong> · <span class="kpi-inline accent">50 亿元(按产值换算)</span></li>
             <li>设计思路:<strong>规模化、自动化、智能化、连续流</strong></li>
             <li>为 2026-2028 收入翻倍提供产能保障</li>
             <li>2024H1 电生理耗材产能 +50%+,血管介入 +40%</li>
           </ul>
         </div>
       </div>
+      <div class="card">
+        <div class="card-header"><h3>研发专利 + 人才</h3><span class="tag">知识产权</span></div>
+        <div class="card-body">
+          <ul class="bullet-list" style="font-size: 13px; line-height: 1.7;">
+            <li><strong>已授权专利:</strong> 109+ 项(2024 末),每年新增 15-20 项</li>
+            <li><strong>国内医疗器械注册证:</strong> 51+ 项(2024 末)</li>
+            <li><strong>研发人员:</strong> 占比约 15%+,硕博比例高</li>
+            <li><strong>2025 新增专利:</strong> 3+ 项(2025-05 实用新型"基于比值法的荧光染料光学筛选平台"等)</li>
+            <li><strong>研发体系:</strong>电生理 + 冠脉 + 外周 + 神经介入 4 大研发平台</li>
+            <li><strong>外部协同:</strong> 与迈瑞医疗联合研发 ICE 导管(2025-11 获批)</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="card mt-3">
-      <div class="card-header"><h3>主要在研产品管线</h3><span class="tag">Pipeline · 2026 重点</span></div>
+      <div class="card-header"><h3>主要在研产品管线</h3><span class="tag">Pipeline · 2026-2030 重点</span></div>
       <div class="card-body-flush">
         <table class="table">
           <thead>
@@ -530,11 +925,11 @@
   </div>
 </section>
 
-<!-- ===== 收购 + 迈瑞协同 ===== -->
-<section class="section">
+<!-- ===== 8. 迈瑞协同 ===== -->
+<section class="section" id="sec-maiqi">
   <div class="container">
     <div class="section-title">
-      <h2>迈瑞入主 + 协同效应 · 中国医械最大并购案之一</h2>
+      <h2>8. 迈瑞入主 + 协同效应</h2>
       <span class="sub">2024-01 · 66.5 亿元 · 科创板首单"A 吃 A"</span>
     </div>
 
@@ -582,13 +977,37 @@
   </div>
 </section>
 
-<!-- ===== 2025 财务详解 ===== -->
-<section class="section">
+<!-- ===== 9. 财务详解 ===== -->
+<section class="section" id="sec-financial">
   <div class="container">
     <div class="section-title">
-      <h2>财务详解 · 2025 年报</h2>
+      <h2>9. 财务详解 · 2025 年报</h2>
       <span class="sub">2025 +25.08% / +21.91% / 毛利率 72.88%</span>
     </div>
+
+    <div class="metric-compare mb-3">
+      <div class="m-block">
+        <div class="lbl">2024 全年</div>
+        <div class="val">20.66 亿</div>
+        <div class="delta flat">营收 / +25.18% YoY</div>
+      </div>
+      <div class="m-block" style="background: rgba(200, 160, 77, 0.1); border-color: var(--color-accent);">
+        <div class="lbl">2025 全年</div>
+        <div class="val" style="color: var(--color-accent);">25.84 亿</div>
+        <div class="delta up">营收 / +25.08% YoY</div>
+      </div>
+      <div class="m-block">
+        <div class="lbl">2024 归母净利</div>
+        <div class="val">6.73 亿</div>
+        <div class="delta flat">+26.14% YoY</div>
+      </div>
+      <div class="m-block" style="background: rgba(200, 160, 77, 0.1); border-color: var(--color-accent);">
+        <div class="lbl">2025 归母净利</div>
+        <div class="val" style="color: var(--color-accent);">8.21 亿</div>
+        <div class="delta up">+21.91% YoY</div>
+      </div>
+    </div>
+
     <div class="card mb-3">
       <div class="card-header"><h3>关键财务指标</h3><span class="tag">单位:亿元</span></div>
       <div class="card-body-flush">
@@ -604,8 +1023,6 @@
             <tr><td>销售费用率</td><td class="text-right num-bold pos">17.83%</td><td class="text-right num">18.05%</td><td class="text-right pos">-0.22pp</td><td>效率提升</td></tr>
             <tr><td>管理费用率</td><td class="text-right num-bold pos">4.59%</td><td class="text-right num">4.43%</td><td class="text-right pos">+0.16pp</td><td>迈瑞协同投入</td></tr>
             <tr><td>基本 EPS</td><td class="text-right num-bold pos">5.82 元</td><td class="text-right num">4.80</td><td class="text-right pos">+21.25%</td><td>EPS 同步高增</td></tr>
-            <tr><td>每股净资产</td><td class="text-right num-bold">21.9 元</td><td class="text-right num">25.8</td><td class="text-right neg">-15.23%</td><td>大额分红 + 回购</td></tr>
-            <tr><td>经营现金流</td><td class="text-right num-bold pos">6.86 元/股</td><td class="text-right num">7.63</td><td class="text-right neg">-10.1%</td><td>—</td></tr>
             <tr><td>2025Q4 营收</td><td class="text-right num-bold pos">7.16</td><td class="text-right num">5.41</td><td class="text-right pos">+32.44%</td><td>PFA 放量拉动</td></tr>
             <tr><td>2025Q4 净利</td><td class="text-right num-bold pos">1.97</td><td class="text-right num">1.45</td><td class="text-right pos">+36.09%</td><td>—</td></tr>
             <tr><td>2026Q1 营收</td><td class="text-right num-bold pos">7.04</td><td class="text-right num">5.64</td><td class="text-right pos">+24.78%</td><td>2026 持续高增</td></tr>
@@ -628,84 +1045,55 @@
   </div>
 </section>
 
-<!-- ===== 行业地位 + 可比公司 ===== -->
-<section class="section">
+<!-- ===== 10. 集采专题 ===== -->
+<section class="section" id="sec-bidding">
   <div class="container">
     <div class="section-title">
-      <h2>行业地位 + 可比公司</h2>
-      <span class="sub">电生理国产第一 / 心血管介入 TOP 5</span>
-    </div>
-    <div class="grid-2 mb-3">
-      <div class="card">
-        <div class="card-header"><h3>电生理市场格局</h3><span class="tag">2024 国产化率不足 20%</span></div>
-        <div class="card-body">
-          <table class="table">
-            <thead><tr><th>公司</th><th>类型</th><th>2024 营收(亿)</th><th>国产化角色</th></tr></thead>
-            <tbody>
-              <tr><td>强生(J&J)</td><td>进口</td><td>—</td><td>市场领导者(全球最大)</td></tr>
-              <tr><td>雅培(Abbott)</td><td>进口</td><td>—</td><td>三强</td></tr>
-              <tr><td>美敦力(Medtronic)</td><td>进口</td><td>—</td><td>三强</td></tr>
-              <tr style="background: rgba(212, 175, 55, 0.15);"><td><strong>惠泰医疗</strong></td><td>国产</td><td>4.40 → 5.71</td><td><strong>国产电生理第一</strong></td></tr>
-              <tr><td>微创医疗(0853.HK)</td><td>国产</td><td>—</td><td>二梯队</td></tr>
-              <tr><td>乐普医疗</td><td>国产</td><td>—</td><td>二梯队</td></tr>
-              <tr><td>锦江电子</td><td>国产</td><td>—</td><td>二梯队</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header"><h3>冠脉通路市场</h3><span class="tag">国产化率 80%</span></div>
-        <div class="card-body">
-          <table class="table">
-            <thead><tr><th>公司</th><th>类型</th><th>2024 营收(亿)</th><th>市场份额</th></tr></thead>
-            <tbody>
-              <tr><td>美敦力</td><td>进口</td><td>—</td><td>龙头(全球)</td></tr>
-              <tr><td>波士顿科学</td><td>进口</td><td>—</td><td>三强</td></tr>
-              <tr><td>雅培</td><td>进口</td><td>—</td><td>三强</td></tr>
-              <tr style="background: rgba(212, 175, 55, 0.15);"><td><strong>惠泰医疗</strong></td><td>国产</td><td>10.54 → 13.43</td><td><strong>国产第一, 15%+ 份额</strong></td></tr>
-              <tr><td>乐普医疗</td><td>国产</td><td>—</td><td>国产三强</td></tr>
-              <tr><td>微创医疗</td><td>国产</td><td>—</td><td>国产三强</td></tr>
-              <tr><td>赛诺医疗</td><td>国产</td><td>—</td><td>二梯队</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header"><h3>中国心血管介入 TOP 5 横向对比(2025)</h3><span class="tag">单位:亿元</span></div>
-      <div class="card-body-flush">
-        <table class="table">
-          <thead>
-            <tr><th>公司</th><th>代码</th><th class="text-right">营收</th><th class="text-right">YoY</th><th class="text-right">净利</th><th class="text-right">YoY</th><th class="text-right">毛利率</th><th>定位</th></tr>
-          </thead>
-          <tbody>
-            <tr style="background: rgba(212, 175, 55, 0.15);">
-              <td><strong>惠泰医疗</strong></td><td>688617.SH</td>
-              <td class="text-right num-bold pos">25.84</td><td class="text-right pos">+25.08%</td>
-              <td class="text-right num-bold pos">8.21</td><td class="text-right pos">+21.91%</td>
-              <td class="text-right pos">72.88%</td>
-              <td>电生理 + 冠脉通路双龙头</td>
-            </tr>
-            <tr><td>乐普医疗</td><td>300003.SZ</td><td class="text-right num">64.83</td><td class="text-right pos">+6.22%</td><td class="text-right num">9.62</td><td class="text-right pos">+289.57%</td><td class="text-right num">—</td><td>心血管 + IVD + 药品平台</td></tr>
-            <tr><td>微创医疗</td><td>0853.HK</td><td class="text-right num">11.05 亿美元</td><td class="text-right pos">+6%</td><td class="text-right num">0.485 亿美元</td><td class="text-right pos">扭亏</td><td class="text-right num">—</td><td>多元化心血管平台(港股)</td></tr>
-            <tr><td>心脉医疗</td><td>688016.SH</td><td class="text-right num">—</td><td class="text-right pos">+</td><td class="text-right num">—</td><td class="text-right pos">+</td><td class="text-right num">—</td><td>主动脉介入(微创子公司)</td></tr>
-            <tr><td>赛诺医疗</td><td>688108.SH</td><td class="text-right num">—</td><td class="text-right pos">+</td><td class="text-right num">—</td><td class="text-right pos">+</td><td class="text-right num">—</td><td>冠脉支架 + 神经介入</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 集采政策影响 ===== -->
-<section class="section">
-  <div class="container">
-    <div class="section-title">
-      <h2>集采政策影响 · 危机与机遇并存</h2>
+      <h2>10. 集采政策影响 · 危机与机遇并存</h2>
       <span class="sub">国产替代最大催化剂</span>
     </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">图 7 · 集采时间线(2021-2026)</div>
+      <div class="chart-sub">国产替代窗口期</div>
+      <svg viewBox="0 0 800 240" preserveAspectRatio="xMidYMid meet">
+        <line x1="40" y1="120" x2="760" y2="120" stroke="#0A2540" stroke-width="2.5"/>
+        <g>
+          <circle cx="120" cy="120" r="8" fill="#B33A3A"/>
+          <text x="120" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#B33A3A">2021</text>
+          <text x="120" y="86" text-anchor="middle" font-size="9" fill="#5A6473">福建电生理集采</text>
+          <text x="120" y="148" text-anchor="middle" font-size="9" fill="#5A6473">全线中标</text>
+
+          <circle cx="260" cy="120" r="8" fill="#C8843D"/>
+          <text x="260" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#C8843D">2022</text>
+          <text x="260" y="86" text-anchor="middle" font-size="9" fill="#5A6473">京津冀"3+N"</text>
+          <text x="260" y="148" text-anchor="middle" font-size="9" fill="#5A6473">河南 19 省通用介入</text>
+
+          <circle cx="400" cy="120" r="8" fill="#C8A04D"/>
+          <text x="400" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#C8A04D">2024-12</text>
+          <text x="400" y="86" text-anchor="middle" font-size="9" fill="#5A6473">PFA 国产首批</text>
+          <text x="400" y="148" text-anchor="middle" font-size="9" fill="#5A6473">暂未纳入集采</text>
+
+          <circle cx="540" cy="120" r="8" fill="#2D7D52"/>
+          <text x="540" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#2D7D52">2025</text>
+          <text x="540" y="86" text-anchor="middle" font-size="9" fill="#5A6473">甘肃联盟</text>
+          <text x="540" y="148" text-anchor="middle" font-size="9" fill="#5A6473">河北联盟中标</text>
+
+          <circle cx="680" cy="120" r="10" fill="#2D7D52" stroke="#fff" stroke-width="2"/>
+          <text x="680" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#2D7D52">2026</text>
+          <text x="680" y="86" text-anchor="middle" font-size="9" fill="#5A6473">浙江微导管/内蒙压力泵</text>
+          <text x="680" y="160" text-anchor="middle" font-size="9" fill="#5A6473">福建电生理续约</text>
+        </g>
+        <!-- 阶段标注 -->
+        <g>
+          <rect x="80" y="180" width="180" height="30" fill="rgba(179, 58, 58, 0.1)" stroke="#B33A3A" stroke-dasharray="3,2" rx="4"/>
+          <text x="170" y="198" text-anchor="middle" font-size="11" font-weight="700" fill="#B33A3A">2021-2023 集采冲击</text>
+          <rect x="360" y="180" width="220" height="30" fill="rgba(45, 125, 82, 0.1)" stroke="#2D7D52" stroke-dasharray="3,2" rx="4"/>
+          <text x="470" y="198" text-anchor="middle" font-size="11" font-weight="700" fill="#2D7D52">2024+ 集采红利兑现</text>
+        </g>
+      </svg>
+    </div>
+
     <div class="card">
       <div class="card-body-flush">
         <table class="table">
@@ -755,11 +1143,91 @@
   </div>
 </section>
 
-<!-- ===== 投资视角综合 ===== -->
-<section class="section">
+<!-- ===== 11. 行业可比 ===== -->
+<section class="section" id="sec-comparable">
   <div class="container">
     <div class="section-title">
-      <h2>投资视角综合分析</h2>
+      <h2>11. 行业地位 + 可比公司</h2>
+      <span class="sub">电生理国产第一 / 心血管介入 TOP 5</span>
+    </div>
+    <div class="card mb-3">
+      <div class="card-body-flush">
+        <table class="table">
+          <thead>
+            <tr><th>公司</th><th>代码</th><th class="text-right">营收</th><th class="text-right">YoY</th><th class="text-right">净利</th><th class="text-right">YoY</th><th class="text-right">毛利率</th><th>定位</th></tr>
+          </thead>
+          <tbody>
+            <tr style="background: rgba(212, 175, 55, 0.15);">
+              <td><strong>惠泰医疗</strong></td><td>688617.SH</td>
+              <td class="text-right num-bold pos">25.84</td><td class="text-right pos">+25.08%</td>
+              <td class="text-right num-bold pos">8.21</td><td class="text-right pos">+21.91%</td>
+              <td class="text-right pos">72.88%</td>
+              <td>电生理 + 冠脉通路双龙头</td>
+            </tr>
+            <tr><td>乐普医疗</td><td>300003.SZ</td><td class="text-right num">64.83</td><td class="text-right pos">+6.22%</td><td class="text-right num">9.62</td><td class="text-right pos">+289.57%</td><td class="text-right num">—</td><td>心血管 + IVD + 药品平台</td></tr>
+            <tr><td>微创医疗</td><td>0853.HK</td><td class="text-right num">$11.05</td><td class="text-right pos">+6%</td><td class="text-right num">$0.49</td><td class="text-right pos">扭亏</td><td class="text-right num">—</td><td>多元化心血管平台(港股)</td></tr>
+            <tr><td>心脉医疗</td><td>688016.SH</td><td class="text-right num">—</td><td class="text-right pos">+</td><td class="text-right num">—</td><td class="text-right pos">+</td><td class="text-right num">—</td><td>主动脉介入(微创子公司)</td></tr>
+            <tr><td>赛诺医疗</td><td>688108.SH</td><td class="text-right num">—</td><td class="text-right pos">+</td><td class="text-right num">—</td><td class="text-right pos">+</td><td class="text-right num">—</td><td>冠脉支架 + 神经介入</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 同业关键指标雷达图 (对比迈瑞/联影/乐普 净利率/毛利率/研发率/海外占比) -->
+    <div class="chart-wrap">
+      <div class="chart-title">图 8 · 惠泰 vs 同业关键指标对比(2025)</div>
+      <div class="chart-sub">净利率 / 毛利率 / 研发费用率 / 海外占比 4 维对比</div>
+      <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid meet">
+        <!-- 中心 200,170 半径 100 -->
+        <g transform="translate(200, 170)">
+          <!-- 雷达网格 -->
+          <g stroke="#E1E5EB" fill="none" stroke-width="1">
+            <polygon points="0,-100 86.6,-50 86.6,50 0,100 -86.6,50 -86.6,-50"/>
+            <polygon points="0,-67 57.7,-33 57.7,33 0,67 -57.7,33 -57.7,-33" stroke-dasharray="2,2"/>
+            <polygon points="0,-33 28.9,-17 28.9,17 0,33 -28.9,17 -28.9,-17" stroke-dasharray="2,2"/>
+          </g>
+          <!-- 轴 -->
+          <g stroke="#5A6473" stroke-width="0.5">
+            <line x1="0" y1="0" x2="0" y2="-100"/>
+            <line x1="0" y1="0" x2="86.6" y2="-50"/>
+            <line x1="0" y1="0" x2="86.6" y2="50"/>
+            <line x1="0" y1="0" x2="0" y2="100"/>
+            <line x1="0" y1="0" x2="-86.6" y2="50"/>
+            <line x1="0" y1="0" x2="-86.6" y2="-50"/>
+          </g>
+          <!-- 标签 -->
+          <g font-size="10" fill="#5A6473" font-weight="600">
+            <text x="0" y="-110" text-anchor="middle">净利率</text>
+            <text x="95" y="-55" text-anchor="start">毛利率</text>
+            <text x="95" y="55" text-anchor="start">研发率</text>
+            <text x="0" y="120" text-anchor="middle">海外占比</text>
+            <text x="-95" y="55" text-anchor="end">营收增速</text>
+            <text x="-95" y="-55" text-anchor="end">ROE</text>
+          </g>
+          <!-- 惠泰:净利31.26, 毛利72.88, 研发14.12, 海外13.03, 增速25.08, ROE 19 -->
+          <!-- 归一化到 0-100 范围 -->
+          <polygon points="0,-100 86.6,-50 28.3,16.3 13.0,7.5 50,29 -38.6,-22" fill="rgba(200,160,77,0.4)" stroke="#C8A04D" stroke-width="2"/>
+          <!-- 迈瑞:净利24.5, 毛利65, 研发10, 海外53, 增速-9.4, ROE 25 -->
+          <polygon points="0,-78 65.4,-37 25.9,15 53,30 -18.8,11 -50,-29" fill="rgba(10,37,64,0.15)" stroke="#0A2540" stroke-width="2" stroke-dasharray="3,2"/>
+          <!-- 联影:净利13.5, 毛利50, 研发10, 海外25, 增速34, ROE 12 -->
+          <polygon points="0,-43 38.5,-22 25.9,15 25,14.4 68,39 -24,-14" fill="rgba(45,125,82,0.15)" stroke="#2D7D52" stroke-width="2" stroke-dasharray="3,2"/>
+        </g>
+      </svg>
+      <div class="chart-legend">
+        <div class="item"><span class="swatch" style="background: #C8A04D;"></span>惠泰医疗</div>
+        <div class="item"><span class="swatch" style="background: #0A2540;"></span>迈瑞医疗</div>
+        <div class="item"><span class="swatch" style="background: #2D7D52;"></span>联影医疗</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 12. 投资视角 ===== -->
+<section class="section" id="sec-verdict">
+  <div class="container">
+    <div class="section-title">
+      <h2>12. 投资视角综合分析</h2>
       <span class="sub">国产电生理龙头 · 迈瑞赋能 · PFA 打开第二曲线</span>
     </div>
     <div class="grid-2">
@@ -825,8 +1293,9 @@
   <div class="container">
     <div class="footer-grid">
       <div><h4>MedTech DeepDive</h4><p style="font-size: 12px; line-height: 1.7;">面向个人投资者的中国医疗器械上市公司深度研究。</p></div>
+      <div><h4>★ 重点公司</h4><ul><li><a href="huitai.html" style="color: var(--color-accent); font-weight: 700;">→ 惠泰医疗 · 深度</a></li><li><a href="dabo.html" style="color: var(--color-accent); font-weight: 700;">→ 大博医疗 · 深度</a></li></ul>
+        <h4 style="margin-top: 16px;">其他公司</h4><ul><li><a href="mindray.html">迈瑞医疗</a></li><li><a href="united-imaging.html">联影医疗</a></li><li><a href="lepu.html">乐普医疗</a></li><li><a href="microport.html">微创医疗</a></li></ul></div>
       <div><h4>导航</h4><ul><li><a href="../index.html">首页</a></li><li><a href="../tracks.html">赛道对比</a></li><li><a href="../financial.html">财务数据</a></li><li><a href="../sources.html">数据源</a></li></ul></div>
-      <div><h4>重点公司</h4><ul><li><a href="huitai.html">惠泰医疗 · 深度</a></li><li><a href="dabo.html">大博医疗 · 深度</a></li><li><a href="mindray.html">迈瑞医疗</a></li><li><a href="united-imaging.html">联影医疗</a></li></ul></div>
       <div><h4>数据来源</h4><ul><li>巨潮资讯网 (cninfo)</li><li>港交所披露易</li><li>公司官网/招股书</li><li>东方财富/同花顺</li></ul></div>
     </div>
     <div class="footer-bottom">
@@ -835,6 +1304,30 @@
     </div>
   </div>
 </footer>
+
+<script>
+// 简单滚动监听:高亮当前章节
+(function() {
+  const navLinks = document.querySelectorAll('.page-nav-top a');
+  const sections = [];
+  navLinks.forEach(a => {
+    const id = a.getAttribute('href').replace('#', '');
+    const sec = document.getElementById(id);
+    if (sec) sections.push({ id, sec, a });
+  });
+  function update() {
+    const scrollY = window.scrollY + 120;
+    let active = sections[0];
+    for (const s of sections) {
+      if (s.sec.offsetTop <= scrollY) active = s;
+    }
+    navLinks.forEach(a => a.classList.remove('active'));
+    if (active) active.a.classList.add('active');
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+</script>
 
 </body>
 </html>
